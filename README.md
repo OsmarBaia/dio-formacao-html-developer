@@ -4,17 +4,12 @@
   <div align="left">
     
   ## Resumo
-  Este desafio tem como objetivo, criar um site "quase" completo, com tudo o que vimos neste módulo. Os temas que deverão ser abordados são:
-  
-    - Formulários
-    - Estruturação e formatação de texto
-    - Mídias
-    - Tabelas
-    - Além de outros recursos falados nas aulas!
-  
+  A formação aprensenta o Hyper Text Markup Language, HTML, ensina na prática a como estruturar a marcação da uma página e como funciona cada tag, os elementos semânticos e outras boas práticas na hora de construir uma página.
+
   </div>
 </div>
 
+<br>
 
 ## Projetos
 
