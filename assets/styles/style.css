@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  width: 100vw;
+}
+header h1 {
+  color: #0F2852;
+  position: absolute;
+  top: 5rem;
+  left: 1.5rem;
+  width: 10rem;
+  font-size: 1.2rem;
+}
+header p {
+  color: #0957DE;
+  position: absolute;
+  top: 8rem;
+  left: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  width: 10rem;
+}
+header div {
+  width: auto;
+  height: 300px;
+  background-size: cover;
+  background-image: url("../../assets/images/medica.jpg");
+  background-position-x: -20rem;
+}
+header div a {
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0.25rem;
+  color: dimgray;
+  font-weight: lighter;
+  font-size: smaller;
+  text-decoration: none;
+}
+header div a:hover {
+  color: lightgray;
+}
+header figure img {
+  width: auto;
+  height: 300px;
+  overflow: hidden;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #4089F8;
+  display: inline-block;
+  max-width: 5rem;
+  max-height: 5rem;
+  overflow: visible;
+  outline: none;
+}
+.nav-container a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.nav-container.is-active .nav-toggle:before, .nav-container.is-active .nav-toggle:after {
+  box-shadow: none;
+}
+.nav-container.is-active .nav-toggle:before {
+  transform: rotate(-45deg);
+}
+.nav-container.is-active .nav-toggle:after {
+  transform: rotate(45deg);
+}
+.nav-container.is-active .nav-items {
+  transform: translate(0, 0);
+}
+.nav-container .nav-toggle {
+  position: relative;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: auto auto;
+  z-index: 2;
+}
+.nav-container .nav-toggle:hover {
+  cursor: pointer;
+}
+.nav-container .nav-toggle:before, .nav-container .nav-toggle:after {
+  content: "";
+  position: absolute;
+  top: 1.075rem;
+  left: 0;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 0.25rem;
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nav-container .nav-toggle:before {
+  box-shadow: 0 0.6666666667rem 0 0 white;
+}
+.nav-container .nav-toggle:after {
+  box-shadow: 0 -0.6666666667rem 0 0 white;
+}
+.nav-container .nav-items {
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  min-width: 1rem;
+  max-width: 50vw;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding: 5rem 1rem 1rem 0.9rem;
+  transition: transform 0.3s ease;
+  transform: translate(calc(-100% - 50px), 0);
+  background: #4089F8;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px 0;
+  align-content: start;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+.nav-container .nav-items .nav-item {
+  background: #084dc5;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+.nav-container .nav-items .nav-item.grow {
+  transition: all 0.2s ease-in-out;
+}
+.nav-container .nav-items .nav-item.grow:hover {
+  cursor: pointer;
+  background: #0744ad;
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=style.css.map */
