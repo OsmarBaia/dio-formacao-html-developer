@@ -1,0 +1,206 @@
+header {
+  position: relative;
+  width: 100vw;
+
+  h1{
+    @extend %headings;
+    color: $color-dark-blue;
+    position: absolute;
+    top: 5rem;
+    left: 1.5rem;
+    width: 10rem;
+
+    span{
+      color: $color-light-blue;
+    }
+  }
+
+  p{
+    color: $color-gray;
+    position: absolute;
+
+    top:9.5rem;
+    left: 1.5rem;
+    font-weight: 400;
+    width: 10rem;
+
+  }
+
+  div{
+    width: auto;
+    height: 20rem;
+    background-size: cover;
+    background-image: url("../../assets/images/medica.jpg");
+    background-position-x: -20rem;
+
+    a{
+      position: absolute;
+      bottom: 0.1rem;
+      left: 0.25rem;
+      color: darkgray;
+      font-weight: lighter;
+      font-size: smaller;
+      text-decoration: none;
+
+      &:hover{
+        color: dimgray;
+      }
+    }
+  }
+
+  figure{
+    img{
+      width:auto;
+      height: 300px;
+      overflow: hidden;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 420px) {
+  header {
+    h1 {
+      font-size: 1.5rem;
+      width: 15rem;
+    }
+
+    p {
+      top: 10rem;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 540px) {
+  header {
+    h1 {
+      font-size: 2rem;
+      left: 2.5rem;
+      width: 15rem;
+    }
+
+    p {
+      font-size: 1rem;
+      top: 12rem;
+      left: 2.5rem;
+      width: 15rem;
+    }
+
+    div {
+      background-position-x: -12rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 680px) {
+  header {
+    h1 {
+      font-size: 2.5rem;
+      left: 5rem;
+      width: 20rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      top: 13rem;
+      left: 5rem;
+      width: 20rem;
+    }
+
+    div {
+      background-position-x: -6rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 681px) and (max-width: 800px){
+  header {
+    h1 {
+      font-size: 3rem;
+      left: 6rem;
+      width: 25rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      top: 14rem;
+      left: 6rem;
+      width: 30rem;
+    }
+
+    div {
+      background-position-x: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+  header {
+    h1 {
+      font-size: 3.5rem;
+      top:4rem;
+      left: 7rem;
+      width: 30rem;
+    }
+
+    p {
+      font-size: 1.75rem;
+      top: 15rem;
+      left: 7rem;
+      width: 30rem;
+    }
+
+    div {
+      background-position-x: 0;
+      height: 22rem;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1444px){
+  header {
+    h1 {
+      font-size: 4rem;
+      top: 5rem;
+      left: 10rem;
+      width: 30rem;
+    }
+
+    p {
+      font-size: 2rem;
+      top: 18rem;
+      left: 10rem;
+      width: 30rem;
+    }
+
+    div {
+      background-position-x: 0;
+      height: 30rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1445px){
+  header {
+    h1 {
+      font-size: 4.5rem;
+      top: 15rem;
+      left: 15rem;
+      width: 40rem;
+    }
+
+    p {
+      font-size: 2.25rem;
+      top: 30rem;
+      left: 15rem;
+      width: 40rem;
+    }
+
+    div {
+      background-position-x: -15rem;
+      height: 50rem;
+    }
+  }
+}

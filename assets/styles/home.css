@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Monospaced, sans-serif;
+}
+
+body {
+  min-width: 280px;
+  max-width: 1920px;
+  margin: auto;
+  background-color: #FFFFFF;
+}
+
+#struct h2, #services h2, #about h2, header h1 {
+  font-family: Poppins, Roboto, Monospaced, sans-serif;
+}
+
+#struct p, #services p, #about p {
+  color: #525252;
+  text-indent: 1rem;
+  text-align: justify;
+  margin: 0 0.5rem 0.5rem;
+}
+
+#struct, #services, #about {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+}
+#struct div, #services div, #about div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#struct button, #services button, #about button, #footer__info #info__address button {
+  padding: 0.5rem;
+  align-self: center;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  border-radius: 1rem;
+  border: 0.5px solid #525252;
+  background-color: #0957DE;
+}
+#struct button:hover, #services button:hover, #about button:hover, #footer__info #info__address button:hover {
+  background-color: #0744ad;
+}
+#struct button a, #services button a, #about button a, #footer__info #info__address button a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  width: 100vw;
+}
+header h1 {
+  color: #0F2852;
+  position: absolute;
+  top: 5rem;
+  left: 1.5rem;
+  width: 10rem;
+}
+header h1 span {
+  color: #4089F8;
+}
+header p {
+  color: #525252;
+  position: absolute;
+  top: 9.5rem;
+  left: 1.5rem;
+  font-weight: 400;
+  width: 10rem;
+}
+header div {
+  width: auto;
+  height: 20rem;
+  background-size: cover;
+  background-image: url("../../assets/images/medica.jpg");
+  background-position-x: -20rem;
+}
+header div a {
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0.25rem;
+  color: darkgray;
+  font-weight: lighter;
+  font-size: smaller;
+  text-decoration: none;
+}
+header div a:hover {
+  color: dimgray;
+}
+header figure img {
+  width: auto;
+  height: 300px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 420px) {
+  header h1 {
+    font-size: 1.5rem;
+    width: 15rem;
+  }
+  header p {
+    top: 10rem;
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 540px) {
+  header h1 {
+    font-size: 2rem;
+    left: 2.5rem;
+    width: 15rem;
+  }
+  header p {
+    font-size: 1rem;
+    top: 12rem;
+    left: 2.5rem;
+    width: 15rem;
+  }
+  header div {
+    background-position-x: -12rem;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 680px) {
+  header h1 {
+    font-size: 2.5rem;
+    left: 5rem;
+    width: 20rem;
+  }
+  header p {
+    font-size: 1.25rem;
+    top: 13rem;
+    left: 5rem;
+    width: 20rem;
+  }
+  header div {
+    background-position-x: -6rem;
+  }
+}
+@media only screen and (min-width: 681px) and (max-width: 800px) {
+  header h1 {
+    font-size: 3rem;
+    left: 6rem;
+    width: 25rem;
+  }
+  header p {
+    font-size: 1.5rem;
+    top: 14rem;
+    left: 6rem;
+    width: 30rem;
+  }
+  header div {
+    background-position-x: 0;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+  header h1 {
+    font-size: 3.5rem;
+    top: 4rem;
+    left: 7rem;
+    width: 30rem;
+  }
+  header p {
+    font-size: 1.75rem;
+    top: 15rem;
+    left: 7rem;
+    width: 30rem;
+  }
+  header div {
+    background-position-x: 0;
+    height: 22rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1444px) {
+  header h1 {
+    font-size: 4rem;
+    top: 5rem;
+    left: 10rem;
+    width: 30rem;
+  }
+  header p {
+    font-size: 2rem;
+    top: 18rem;
+    left: 10rem;
+    width: 30rem;
+  }
+  header div {
+    background-position-x: 0;
+    height: 30rem;
+  }
+}
+@media only screen and (min-width: 1445px) {
+  header h1 {
+    font-size: 4.5rem;
+    top: 15rem;
+    left: 15rem;
+    width: 40rem;
+  }
+  header p {
+    font-size: 2.25rem;
+    top: 30rem;
+    left: 15rem;
+    width: 40rem;
+  }
+  header div {
+    background-position-x: -15rem;
+    height: 50rem;
+  }
+}
+.nav-container {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #4089F8;
+  display: inline-block;
+  max-width: 5rem;
+  max-height: 5rem;
+  overflow: visible;
+  outline: none;
+}
+.nav-container a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.nav-container.is-active .nav-toggle:before, .nav-container.is-active .nav-toggle:after {
+  box-shadow: none;
+}
+.nav-container.is-active .nav-toggle:before {
+  transform: rotate(-45deg);
+}
+.nav-container.is-active .nav-toggle:after {
+  transform: rotate(45deg);
+}
+.nav-container.is-active .nav-items {
+  transform: translate(0, 0);
+}
+.nav-container .nav-toggle {
+  position: relative;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: auto auto;
+  z-index: 2;
+}
+.nav-container .nav-toggle:hover {
+  cursor: pointer;
+}
+.nav-container .nav-toggle:before, .nav-container .nav-toggle:after {
+  content: "";
+  position: absolute;
+  top: 1.075rem;
+  left: 0;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 0.25rem;
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nav-container .nav-toggle:before {
+  box-shadow: 0 0.6666666667rem 0 0 white;
+}
+.nav-container .nav-toggle:after {
+  box-shadow: 0 -0.6666666667rem 0 0 white;
+}
+.nav-container .nav-items {
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  min-width: 1rem;
+  max-width: 50vw;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding: 5rem 1rem 1rem 0.9rem;
+  transition: transform 0.3s ease;
+  transform: translate(calc(-100% - 50px), 0);
+  background: #4089F8;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px 0;
+  align-content: start;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+.nav-container .nav-items .nav-item {
+  background: #084dc5;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+.nav-container .nav-items .nav-item.grow {
+  transition: all 0.2s ease-in-out;
+}
+.nav-container .nav-items .nav-item.grow:hover {
+  cursor: pointer;
+  background: #0744ad;
+  transform: scale(1.1);
+}
+
+footer {
+  width: 100vw;
+  height: auto;
+  padding: 3rem 1rem;
+  background-color: #4089F8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer__logo {
+  width: 260px;
+  height: auto;
+}
+#footer__logo img {
+  height: auto;
+  width: 100%;
+}
+
+#footer__info {
+  padding: 1rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
+#footer__info div h3, #footer__info div p {
+  color: #FFFFFF;
+  margin: 0.2rem 0;
+}
+#footer__info div a {
+  text-decoration: none;
+}
+#footer__info div li {
+  list-style: none;
+}
+#footer__info #info__links a {
+  color: #0F2852;
+}
+#footer__info #info__links a:hover {
+  color: #071327;
+}
+#footer__info #info__address {
+  display: flex;
+  flex-direction: column;
+}
+#footer__info #info__address p {
+  font-size: small;
+}
+#footer__info #info__address button {
+  margin-top: 2rem;
+}
+
+#footer__copyrights {
+  height: auto;
+  margin: 1rem;
+}
+
+#footer__copyrights p {
+  line-height: 2rem;
+  color: #525252;
+}
+
+#about {
+  background-color: #FFFFFF;
+}
+#about h2 {
+  color: #0F2852;
+}
+#services {
+  background-color: #4089F8;
+}
+#services h2 {
+  color: #FFFFFF;
+}
+#services p {
+  color: #FFFFFF;
+}
+#services div ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 1rem;
+}
+#services div ul li {
+  width: 9rem;
+  height: 3rem;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  background-color: #0F2852;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+#services div ul li figure img {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+#services div ul li span {
+  color: #FFFFFF;
+  margin: auto 0.5rem auto;
+}
+#struct div {
+  flex-direction: row-reverse;
+}
+#struct h2 {
+  color: #0F2852;
+}
+
+/*# sourceMappingURL=home.css.map */

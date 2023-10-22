@@ -1,0 +1,94 @@
+@import "base";
+@import "header";
+@import "navbar";
+@import "footer";
+@import "mediasQueries";
+
+#about{
+  @extend %flex-section-div;
+
+  background-color: $color-white;
+
+  h2{
+    @extend %headings;
+    color: $color-dark-blue;
+  }
+
+  p{
+    @extend %gray-paragraph;
+  }
+
+  button{
+    @extend %blue-button;
+  }
+}
+
+#services{
+  @extend %flex-section-div;
+  background-color: $color-light-blue;
+
+  h2{
+    @extend %headings;
+    color:  $color-white;
+  }
+
+  p{
+    @extend %gray-paragraph;
+    color: $color-white;
+  }
+
+  div ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin: 1rem auto 1rem;
+
+    li{
+      width: 9rem;
+      height: 3rem;
+      margin: 0.2rem;
+      padding: 0.2rem;
+      background-color: $color-dark-blue;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+
+      figure img{
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+      }
+
+      span{
+        color: $color-white;
+        margin: auto 0.5rem auto;
+      }
+    }
+  }
+  button{
+    @extend %blue-button;
+  }
+}
+
+#struct{
+  @extend %flex-section-div;
+  div{
+    flex-direction: row-reverse;
+  }
+  h2{
+    @extend %headings;
+    color: $color-dark-blue;
+  }
+
+  p{
+    @extend %gray-paragraph;
+  }
+
+  button{
+    @extend %blue-button;
+  }
+}
