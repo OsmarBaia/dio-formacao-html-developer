@@ -1,3 +1,5 @@
+@import "colors";
+
 $toggleSize: 2rem;
 $toggleMargin: 0.25rem;
 $toggleLine: 0.25rem;
@@ -67,7 +69,7 @@ $toggleColor: white;
       width: 100%;
       height: $toggleLine;
       background: $toggleColor;
-      transition: transform .3s ease, box-shadow .3s ease;
+      transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
     }
 
     &:before {
@@ -83,14 +85,15 @@ $toggleColor: white;
     position: absolute;
     top: -$toggleMargin * 2;
     left: -$toggleMargin * 2;
-    min-width: 1rem;
-    max-width: 50vw;
+    min-width: 15rem;
+    max-width: 20vw;
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    padding: 5rem 1rem 1rem .9rem;
-    transition: transform .3s ease;
+    padding: 5rem 2rem 1rem 2rem;
+    transition: transform .3s ease-in-out;
     transform: translate(calc(-100% - 50px), 0);
+
     background: $color-light-blue;
     display: grid;
     grid-template-columns: 1fr;
@@ -100,7 +103,7 @@ $toggleColor: white;
 
     .nav-item {
       background: darken($color-medium-blue, 5%);
-      padding: 10px;
+      padding: 1rem;
       transition: background-color .3s ease;
 
       &.grow {
@@ -110,7 +113,6 @@ $toggleColor: white;
           cursor: pointer;
           background: darken($color-medium-blue, 10%);
           transform: scale(1.1);
-
         }
       }
     }

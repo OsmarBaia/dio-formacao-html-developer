@@ -5,22 +5,114 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/contact.css">
+    <title>MedClinic - Contato</title>
 </head>
 <body>
 <div>
     <header>
-
+        <h1>Contate a <span>MedClinic</span></h1>
+        <p>Escolha um dos nossos canais de atendimento</p>
+        <div>
+            <a href="https://br.freepik.com/fotos-gratis/vista-frontal-da-mulher-sorridente-posando-com-fone-de-ouvido-na-mesa_6881885.htm#page=2&query=receptionist%20on%20phone&position=19&from_view=search&track=ais">Freepik</a>
+        </div>
     </header>
-    <nav>
-
-    </nav>
+    <div class="nav-container" tabindex="0">
+        <div class="nav-toggle"></div>
+        <nav class="nav-items">
+            <a class="nav-item grow" href="../../index.html">Inicio</a>
+            <a class="nav-item grow" href="#">Quem Somos</a>
+            <a class="nav-item grow" href="../pages/business.html">Horários</a>
+            <a class="nav-item grow" href="../pages/contact.html">Contato</a>
+        </nav>
+    </div>
 </div>
 <main>
-
+    <section>
+        <div>
+            <h5>MedClinic</h5>
+            <ul>
+                <li>
+                    <h6>Endereço: </h6>
+                    <p>Tv.LugarNenhum 1234, 123X</p>
+                </li>
+                <li>
+                    <h6>Telefone: </h6>
+                    <p>91998765432</p>
+                </li>
+                <li>
+                    <h6>Email: </h6>
+                    <p>email@gmail.com</p>
+                </li>
+            </ul>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1032.3410715564792!2d-48.48169220937835!3d-1.4398768126558479!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1698100902635!5m2!1spt-BR!2sbr"
+                       style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div>
+            <form action="">
+                <label for="contact-name">Nome: </label><input type="text" name="form-name" id="contact-name">
+                <label for="contact-email">E-mail: </label><input type="email" name="form-email" id="contact-email">
+                <label for="contact-subject">Assunto: </label><input type="text" name="form-subject"
+                                                                     id="contact-subject">
+                <label for="form-message">Descrição: </label><textarea name="contact-message" id="form-message"
+                                                                       cols="30" rows="10">
+            </textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
 </main>
 <footer>
-
+    <section id="footer__logo">
+        <figure>
+            <img src="" alt="logo">
+        </figure>
+    </section>
+    <section id="footer__info">
+        <div id="info__links">
+            <h3>Links</h3>
+            <ul>
+                <li>
+                    <a href="../../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="../pages/about.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="../pages/business.html">Horários</a>
+                </li>
+                <li>
+                    <a href="../pages/contact.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <div id="info__address">
+            <h3>MedClinic</h3>
+            <ul>
+                <li>
+                    <h6>Endereço: </h6>
+                    <p>Tv.LugarNenhum 1234, 123X</p>
+                </li>
+                <li>
+                    <h6>Telefone: </h6>
+                    <p>91998765432</p>
+                </li>
+                <li>
+                    <h6>Email: </h6>
+                    <p>email@gmail.com</p>
+                </li>
+            </ul>
+            <button>
+                <a href="../pages/contact.html">Ver no mapa</a>
+            </button>
+        </div>
+    </section>
+    <section id="footer__copyrights">
+        <p>OsmarNeto@2023</p>
+    </section>
 </footer>
 </body>
 </html>

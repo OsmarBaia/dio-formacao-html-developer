@@ -1,8 +1,4 @@
-@import "base";
-@import "header";
-@import "navbar";
-@import "footer";
-@import "mediasQueries";
+@import "main";
 
 #about{
   @extend %flex-section-div;
@@ -92,3 +88,5 @@
     @extend %blue-button;
   }
 }
+
+// if screen < 480px -> images display none
