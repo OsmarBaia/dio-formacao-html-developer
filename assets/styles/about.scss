@@ -6,3 +6,41 @@ header{
     background-position-x: 32rem;
   }
 }
+
+main section{
+  @extend %flex-section-div;
+
+  h2{
+    @extend %headings;
+  }
+}
+
+.even-section{
+  background-color: $color-white;
+
+  h2{
+    color: $color-dark-blue;
+  }
+
+  p{
+    @extend %gray-paragraph;
+  }
+
+  button{
+    @extend %blue-button;
+  }
+}
+
+.odd-section{
+  background-color: $color-light-blue;
+
+  h2{
+    @extend %headings;
+    color:  $color-white;
+  }
+
+  p{
+    @extend %gray-paragraph;
+    color: $color-white;
+  }
+}

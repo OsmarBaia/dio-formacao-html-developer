@@ -13,11 +13,28 @@ body {
   background-color: #FFFFFF;
 }
 
-header h1 {
+.odd-section h2, main section h2, header h1 {
   font-family: Poppins, Roboto, Monospaced, sans-serif;
 }
 
-#footer__info #info__address button {
+.odd-section p, .even-section p, main section p {
+  color: #525252;
+  text-indent: 1rem;
+  text-align: justify;
+  margin: 0 0.5rem 0.5rem;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+}
+main section div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.even-section button, main section button, #footer__info #info__address button {
   padding: 0.5rem;
   align-self: center;
   right: 0.5rem;
@@ -26,10 +43,10 @@ header h1 {
   border: 0.5px solid #525252;
   background-color: #0957DE;
 }
-#footer__info #info__address button:hover {
+.even-section button:hover, main section button:hover, #footer__info #info__address button:hover {
   background-color: #0744ad;
 }
-#footer__info #info__address button a {
+.even-section button a, main section button a, #footer__info #info__address button a {
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -351,6 +368,33 @@ footer {
 
 header div {
   background-image: url("../images/business.jpg");
+}
+
+.even-section {
+  background-color: #FFFFFF;
+}
+.even-section h2 {
+  color: #0F2852;
+}
+.odd-section {
+  background-color: #4089F8;
+}
+.odd-section h2 {
+  color: #FFFFFF;
+}
+.odd-section p {
+  color: #FFFFFF;
+}
+
+#schedule {
+  color: #0F2852;
+  text-align: center;
+}
+#schedule h2 {
+  background-color: #4089F8;
+}
+#schedule th, #schedule td {
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=business.css.map */

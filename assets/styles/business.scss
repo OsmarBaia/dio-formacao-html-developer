@@ -5,3 +5,61 @@ header{
     background-image: url("../images/business.jpg");
   }
 }
+
+main section{
+  @extend %flex-section-div;
+
+  h2{
+    @extend %headings;
+  }
+
+  p{
+    @extend %gray-paragraph;
+  }
+
+  button{
+    @extend %blue-button;
+  }
+}
+
+.even-section{
+  background-color: $color-white;
+
+  h2{
+    color: $color-dark-blue;
+  }
+
+  p{
+    @extend %gray-paragraph;
+  }
+
+  button{
+    @extend %blue-button;
+  }
+}
+
+.odd-section{
+  background-color: $color-light-blue;
+
+  h2{
+    @extend %headings;
+    color:  $color-white;
+  }
+
+  p{
+    @extend %gray-paragraph;
+    color: $color-white;
+  }
+}
+
+#schedule{
+  color: $color-dark-blue;
+  text-align: center;
+ h2{
+
+    background-color: #4089F8;
+ }
+  th, td{
+    border: 1px solid black;
+  }
+}
