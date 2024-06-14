@@ -26,6 +26,7 @@
     /*Header */
     --header-box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
     --background-color: #fff;
+    --background-color-alt: #f5f5f5 ;
     --meunuBtn-bg-color: #eee;
 }
 
@@ -91,6 +92,10 @@ button{
     margin-left:1rem;
 }
 
+section:nth-child(even){
+    background-color: var(--background-color-alt);
+}
+
 /*
  * ----------------------------------------
  *                 Header
@@ -150,6 +155,7 @@ button{
  * ----------------------------------------
 */
 
+/* Banner */
 .home {
     display:flex;
     align-items: center;
@@ -185,11 +191,51 @@ button{
     padding: 1rem 0;
 }
 
+
+/* About */
+.about-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding-top:5rem;
+    padding-bottom:5rem;
+}
+
+.about-container .about-cards{
+    /*background-color: var(--background-color);*/
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.about-container .about-cards i{
+    font-size: 4.5rem;
+    color: var(--primary-text-color);
+    padding-right: .7rem;
+}
+.about-container .about-cards h3{
+    font-size: 4.5rem;
+    color: var(--secondary-text-color);
+    padding: .5rem;
+    text-shadow: var(--text-shadow);
+}
+.about-container .about-cards p{
+    font-size: 1.7rem;
+    color: var(--tertiary-text-color);
+}
 /*
  * ----------------------------------------
 *               Media Queries
  * ----------------------------------------
 */
+@media (max-width: 1200px){
+    .about-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 
 @media (max-width: 991px){
     html{
@@ -200,6 +246,11 @@ button{
     }
     section{
         padding: 2rem;
+    }
+}
+@media (max-width: 800px){
+    .about-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -236,7 +287,6 @@ button{
         font-size: 2rem;
         display: block;
         margin: 2.5rem;
-
     }
 }
 
@@ -247,6 +297,9 @@ button{
 
     .home {
         padding: 10rem 2rem;
+    }
+    .about-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
