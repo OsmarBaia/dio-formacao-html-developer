@@ -27,10 +27,6 @@
     --header-box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
     --background-color: #fff;
     --meunuBtn-bg-color: #eee;
-    /*--alt-primary-text-color: rgb(250, 250, 250);*/
-    /*--alt-secondary-text-color: rgb(250, 250, 250);*/
-    /*--alt-tertiary-text-color: rgb(250, 250, 250);*/
-
 }
 
 /*
@@ -54,6 +50,45 @@ html{
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+button{
+    background-color: transparent;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem .5rem .5rem 1rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    color: var(--primary-text-color);
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn span{
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    background: var(--primary-text-color);
+    color: var(--background-color);
+    margin-left: .5rem;
+}
+
+.btn:hover{
+    background: var(--primary-text-color);
+    color: var(--background-color);
+}
+
+.btn:hover span{
+    color: var(--primary-text-color);
+    background: var(--background-color);
+    margin-left:1rem;
 }
 
 /*
@@ -109,7 +144,46 @@ html{
     display: none;
 }
 
+/*
+ * ----------------------------------------
+ *                 Main
+ * ----------------------------------------
+*/
 
+.home {
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 10rem;
+}
+
+.home .image{
+    flex: 1 1 45rem;
+}
+
+.home .image img{
+    width: 100%;
+    height: auto;
+}
+
+.home .content{
+    flex: 1 1 45rem;
+}
+
+.home .content h3{
+    color: var(--secondary-text-color);
+    font-size: 4.5rem;
+    line-height:1.8;
+    text-shadow: var(--text-shadow);
+}
+
+.home .content p{
+    color: var(--tertiary-text-color);
+    font-size: 1.7rem;
+    line-height:1.8;
+    padding: 1rem 0;
+}
 
 /*
  * ----------------------------------------
@@ -122,6 +196,9 @@ html{
         font-size: 55%;
     }
     .header{
+        padding: 2rem;
+    }
+    section{
         padding: 2rem;
     }
 }
@@ -167,4 +244,9 @@ html{
     html{
         font-size: 50%;
     }
+
+    .home {
+        padding: 10rem 2rem;
+    }
+
 }
