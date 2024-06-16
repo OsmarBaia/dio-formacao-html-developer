@@ -335,6 +335,82 @@ Presentation
 
 
 /*
+
+Contact
+
+*/
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+
+.contact .row .image{
+    flex:1 1 45rem;
+}
+
+.contact .row .image img{
+    width: 100%;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    background: #fff;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.contact .row form h3{
+    color:var(--secondary-text-color);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.contact .row form label{
+    font-size: 1.7rem;
+    color: var(--tertiary-text-color);
+}
+
+.contact .row form .form-input{
+    width: 100%;
+    margin:.7rem 0;
+    border-radius: .5rem;
+    border:var(--border);
+    font-size: 1.6rem;
+    color: var(--secondary-text-color);
+    text-transform: none;
+    padding: 1rem;
+}
+
+.contact .row form .message{
+    width: 100%;
+    margin:.7rem 0;
+    border-radius: .5rem;
+    border: var(--border);
+    font-size: 1.7rem;
+    padding: 1rem;
+    color: var(--secondary-text-color);
+}
+
+
+.contact .row form .btn{
+    align-self: center;
+    padding:1rem 4rem;
+}
+
+
+/*
  * ----------------------------------------
 *               Media Queries
  * ----------------------------------------
@@ -352,6 +428,11 @@ Presentation
     }
 }
 
+@media (min-width: 1122px){
+    .presentation .row{
+        flex-direction: row-reverse;
+    }
+}
 
 @media (max-width: 991px){
     html{
