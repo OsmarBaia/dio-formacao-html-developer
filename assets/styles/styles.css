@@ -403,10 +403,66 @@ Contact
     color: var(--secondary-text-color);
 }
 
-
 .contact .row form .btn{
     align-self: center;
     padding:1rem 4rem;
+}
+
+/*
+
+Footer
+
+*/
+.footer{
+    margin-top: 5rem;
+    box-shadow: var(--header-box-shadow);
+}
+.footer .footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:2rem;
+    padding: 2rem 3rem 0 3rem;
+}
+
+.footer .footer-container .box h3{
+    font-size: 2.5rem;
+    color:var(--secondary-text-color);
+    padding: 1rem 0;
+}
+
+.footer .footer-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color:var(--tertiary-text-color);
+    padding: 1rem 0;
+}
+
+.footer .footer-container .box a i{
+    padding-right: .5rem;
+    color:var(--primary-text-color);
+}
+
+.footer .footer-container .box a:hover i{
+    padding-right:2rem;
+}
+
+.footer .footer-container .box iframe{
+    max-width: 600px;
+    max-height: 450px;
+    width: 100%;
+    height: auto;
+}
+
+.footer .credit{
+    color:var(--tertiary-text-color);
+    margin: 2rem 1rem 0 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.footer .credit span{
+    color:var(--primary-text-color);
 }
 
 
@@ -420,6 +476,7 @@ Contact
     .services .services-container{
         grid-template-columns: repeat(3, 1fr);
     }
+
 }
 
 @media (max-width: 1200px){
@@ -431,6 +488,17 @@ Contact
 @media (min-width: 1122px){
     .presentation .row{
         flex-direction: row-reverse;
+    }
+
+    .footer .footer-container{
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 10rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1121px) {
+    .footer .footer-container{
+        padding: 0 10rem;
     }
 }
 
@@ -445,6 +513,7 @@ Contact
         padding: 2rem;
     }
 }
+
 @media (max-width: 800px){
     .about-container {
         grid-template-columns: repeat(2, 1fr);
@@ -487,6 +556,12 @@ Contact
     }
 }
 
+@media (min-width: 599px) and (max-width: 1121px) {
+    .footer .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 450px){
     html{
         font-size: 50%;
@@ -496,6 +571,10 @@ Contact
         padding: 10rem 2rem;
     }
     .about-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer .footer-container{
         grid-template-columns: repeat(1, 1fr);
     }
 
