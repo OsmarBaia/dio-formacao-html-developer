@@ -73,6 +73,21 @@ button{
     font-size: 1.7rem;
 }
 
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color:var(--secondary-text-color);
+    font-size: 5rem;
+    letter-spacing: .4rem;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color:var(--primary-text-color);
+}
+
 .btn span{
     padding: 0.7rem 1rem;
     border-radius: 0.5rem;
@@ -95,6 +110,8 @@ button{
 section:nth-child(even){
     background-color: var(--background-color-alt);
 }
+
+
 
 /*
  * ----------------------------------------
@@ -155,7 +172,11 @@ section:nth-child(even){
  * ----------------------------------------
 */
 
-/* Banner */
+/*
+
+Banner
+
+*/
 .home {
     display:flex;
     align-items: center;
@@ -192,7 +213,11 @@ section:nth-child(even){
 }
 
 
-/* About */
+/*
+
+About
+
+*/
 .about-container{
     display: grid;
     gap: 2rem;
@@ -225,11 +250,102 @@ section:nth-child(even){
     font-size: 1.7rem;
     color: var(--tertiary-text-color);
 }
+
+/*
+
+Services
+
+*/
+.services .services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:2rem;
+}
+
+.services .services-container .services-cards{
+    background:var(--background-color);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    padding: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.services .services-container .services-cards i{
+    color: var(--primary-text-color);
+    font-size: 5rem;
+    padding-bottom: .5rem;
+}
+
+.services .services-container .services-cards h3{
+    color: var(--secondary-text-color);
+    font-size: 2.5rem;
+    padding:1rem 0;
+}
+
+.services .services-container .services-cards p{
+    color: var(--tertiary-text-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+
+/*
+
+Presentation
+
+*/
+
+.presentation .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+
+.presentation .row .image{
+    flex:1 1 45rem;
+}
+
+.presentation .row .image img{
+    width: 100%;
+}
+
+.presentation .row .presentation-content{
+    flex:1 1 45rem;
+}
+
+.presentation .row .presentation-content h3{
+    color: var(--secondary-text-color);
+    text-shadow: var(--text-shadow);
+    font-size: 4rem;
+    line-height: 1.8;
+}
+
+.presentation .row .presentation-content p{
+    color: var(--tertiary-text-color);
+    padding:1rem 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+
 /*
  * ----------------------------------------
 *               Media Queries
  * ----------------------------------------
 */
+
+@media (min-width: 1391px) and (max-width: 2097px){
+    .services .services-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media (max-width: 1200px){
     .about-container {
         grid-template-columns: repeat(4, 1fr);
