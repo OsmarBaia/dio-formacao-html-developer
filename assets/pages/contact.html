@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--FavIcon-->
+  <link rel="icon" type="image/x-icon" href="">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles/styles.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <!-- Scripts -->
+  <script src="../scripts/main.js" defer></script>
+
+  <!-- Page info -->
+  <title>MedCenter - Contato</title>
+</head>
+<body>
+<!--
+
+NavBar
+
+-->
+<header class="header">
+  <a href="../../index.html" class="logo"><i class="fas fa-heartbeat"> MedCenter </i> </a>
+  <nav>
+    <ul class="navbar">
+      <li><a href="../../index.html">Início</a></li>
+      <li><a href="./about.html">Sobre</a></li>
+      <li><a href="./schedule.html">Horários</a></li>
+      <li><a href="./contact.html">Contato</a></li>
+    </ul>
+  </nav>
+  <div id="menu-btn" class="fas fa-bars"></div>
+</header>
+<!--
+
+Content
+
+-->
+<main>
+  <!--
+
+  Banner
+
+  -->
+  <section id="banner" class="banner">
+    <picture class="image">
+      <source srcset="../images/contact.jpg" media="(min-width: 768px)">
+      <source srcset="../images/contact.jpg" media="(max-width: 767px)">
+      <!--TODO: Add alt description-->
+      <img src="../images/contact.jpg" alt=""/>
+    </picture>
+    <div class="banner-content">
+      <h3>Contato</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aut dolores enim libero quia quisquam quo recusandae reiciendis vitae! Aliquid aspernatur blanditiis, eos excepturi incidunt molestiae quo rerum suscipit.</p>
+    </div>
+  </section>
+
+
+  <!--
+
+    Contact
+
+    -->
+  <section class="contact" id="contact">
+    <h1 class="heading"> Fale <span>Conosco</span></h1>
+    <div class="row">
+      <div class="image">
+        <img src="./assets/images/contact.jpg" alt="">
+      </div>
+      <!-- TODO: Add form validation-->
+      <form action="" method="">
+        <h3>Contato</h3>
+        <label for="name">Nome: </label><input type="text" id="name" name="name" placeholder="João Silva" class="form-input">
+        <label for="number">Telefone: </label><input type="number" id="number" name="number" placeholder="(00) 00000-0000" class="form-input">
+        <label for="email">E-mail: </label><input type="email" id="email" name="email" placeholder="joaosilva@email.com" class="form-input">
+        <label for="message">Mensagem: </label><textarea name="message" id="message" class="message" placeholder="Duvidas, Sugestões, Agendamentos..."></textarea>
+        <input type="submit" id="submit" name="submit" value="Enviar" class="btn">
+      </form>
+    </div>
+  </section>
+</main>
+<!--
+
+Footer
+
+-->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="box">
+      <h3>Navegação</h3>
+      <a href="#banner"> <i class="fas fa-chevron-right"></i>Início</a>
+      <a href="#about"> <i class="fas fa-chevron-right"></i>Sobre</a>
+      <a href="#services"> <i class="fas fa-chevron-right"></i>Horários</a>
+      <a href="#contact"> <i class="fas fa-chevron-right"></i>Contato</a>
+    </div>
+    <div class="box">
+      <h3> Departamentos </h3>
+      <a href="#"> <i class="fas fa-chevron-right"></i>Clínica geral</a>
+      <a href="#"> <i class="fas fa-chevron-right"></i>Psicologia</a>
+      <a href="#"> <i class="fas fa-chevron-right"></i>Pediatria</a>
+      <a href="#"> <i class="fas fa-chevron-right"></i>Oftalmologia</a>
+    </div>
+
+    <div class="box">
+      <h3>Contato</h3>
+      <a href="#"> <i class="fas fa-phone"></i> +559100000000 </a>
+      <a href="#"> <i class="fa-brands fa-square-whatsapp"></i> +5591900000000 </a>
+      <a href="#"> <i class="fas fa-envelope"></i> medcare@email.com </a>
+      <a href="#"> <i class="fas fa-map-marker-alt"></i> Avenida almirante barroso 0000, Belém-PA</a>
+    </div>
+    <div class="box">
+      <h3>Venha nos visitar</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6893.219848380879!2d-48.46334270764635!3d-1.4360844360911815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48c7310e9f26f%3A0x4503d4deea772127!2sHospital%20Adventista%20de%20Bel%C3%A9m!5e0!3m2!1spt-BR!2sbr!4v1718577176716!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <div class="credit">  feito por <span>osmarbaia@2024</span></div>
+</footer>
+</body>
+</html>

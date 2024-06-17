@@ -177,35 +177,35 @@ section:nth-child(even){
 Banner
 
 */
-.home {
+.banner {
     display:flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding: 10rem;
+    padding: 10rem 2rem;
 }
 
-.home .image{
+.banner .image{
     flex: 1 1 45rem;
 }
 
-.home .image img{
+.banner .image img{
     width: 100%;
     height: auto;
 }
 
-.home .content{
+.banner .banner-content{
     flex: 1 1 45rem;
 }
 
-.home .content h3{
+.banner .banner-content h3{
     color: var(--secondary-text-color);
     font-size: 4.5rem;
     line-height:1.8;
     text-shadow: var(--text-shadow);
 }
 
-.home .content p{
+.banner .banner-content p{
     color: var(--tertiary-text-color);
     font-size: 1.7rem;
     line-height:1.8;
@@ -494,11 +494,19 @@ Footer
         grid-template-columns: repeat(4, 1fr);
         padding: 0 10rem;
     }
+
+    .banner {
+        padding: 10rem;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1121px) {
     .footer .footer-container{
         padding: 0 10rem;
+    }
+
+    .banner {
+        padding: 10rem;
     }
 }
 
@@ -511,6 +519,10 @@ Footer
     }
     section{
         padding: 2rem;
+    }
+
+    .banner {
+        padding: 10rem 3rem;
     }
 }
 
@@ -567,9 +579,6 @@ Footer
         font-size: 50%;
     }
 
-    .home {
-        padding: 10rem 2rem;
-    }
     .about-container {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -577,5 +586,4 @@ Footer
     .footer .footer-container{
         grid-template-columns: repeat(1, 1fr);
     }
-
 }

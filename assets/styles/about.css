@@ -1,0 +1,68 @@
+@import "styles.css";
+
+/*
+
+Departments
+
+*/
+.departments{
+   text-align: center;
+}
+
+.departments .departments-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.departments .departments-container .row{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    padding: 1rem;
+}
+.departments .departments-container .row .image{
+    flex:1 1 45rem;
+}
+.departments .departments-container .row .content{
+    flex:1 1 45rem;
+
+}
+.departments .departments-container .row .image img{
+    width:100%;
+    height:auto;
+}
+.departments .departments-container .row h3{
+    color: var(--secondary-text-color);
+    text-shadow: var(--text-shadow);
+    font-size: 4rem;
+    line-height: 1.8;
+}
+.departments .departments-container .row p{
+    color: var(--tertiary-text-color);
+    padding:1rem 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.departments .departments-container .row ul i{
+   color: var(--primary-text-color);
+
+}
+.departments .departments-container .row ul{
+    font-size: 1.7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.departments .departments-container .row ul li{
+    font-size: 1.5rem;
+    color: var(--tertiary-text-color);
+    list-style: none;
+    display: block;
+}
+.departments .departments-container .row:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+}

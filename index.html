@@ -23,7 +23,7 @@
     <script src="./assets/scripts/formHandler.js" defer></script>
 
     <!-- Page info -->
-    <title>MedCenter - Home</title>
+    <title>MedCenter - Início</title>
 </head>
 <body>
 <!--
@@ -35,10 +35,10 @@ NavBar
     <a href="#" class="logo"><i class="fas fa-heartbeat"> MedCenter </i> </a>
     <nav>
         <ul class="navbar">
-            <li><a href="">Início</a></li>
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Horários</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="#">Início</a></li>
+            <li><a href="./assets/pages/about.html">Sobre</a></li>
+            <li><a href="./assets/pages/schedule.html">Horários</a></li>
+            <li><a href="./assets/pages/contact.html">Contato</a></li>
         </ul>
     </nav>
     <div id="menu-btn" class="fas fa-bars"></div>
@@ -54,14 +54,14 @@ Content
     Banner
 
     -->
-    <section id="home" class="home">
+    <section id="banner" class="banner">
         <picture class="image">
             <source srcset="assets/images/home.jpg" media="(min-width: 768px)">
             <source srcset="assets/images/home_2.jpg" media="(max-width: 767px)">
             <img src="assets/images/home.jpg" alt=""/>
         </picture>
 
-        <div class="content">
+        <div class="banner-content">
             <h3>Sua saúde em primeiro lugar</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aut dolores enim libero quia quisquam quo recusandae reiciendis vitae! Aliquid aspernatur blanditiis, eos excepturi incidunt molestiae quo rerum suscipit.</p>
             <button>
@@ -116,7 +116,7 @@ Content
         <div class="services-container">
             <div class="services-cards">
                 <i class="fas fa-notes-medical"></i>
-                <h3>Checkup Completo</h3>
+                <h3>Checkup</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
                 <!--TODO: Add path to about page talking about this service-->
                 <a href="#" class="btn"> Saiba mais <span class="fas fa-chevron-right"></span> </a>
@@ -148,7 +148,7 @@ Content
 
             <div class="services-cards">
                 <i class="fas fa-procedures"></i>
-                <h3>Leitos</h3>
+                <h3>Internação</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
                 <!--TODO: Add path to about page talking about this service-->
                 <a href="#" class="btn"> Saiba mais <span class="fas fa-chevron-right"></span> </a>
@@ -218,7 +218,7 @@ Content
     <div class="footer-container">
         <div class="box">
             <h3>Navegação</h3>
-            <a href="#home"> <i class="fas fa-chevron-right"></i>Início</a>
+            <a href="#banner"> <i class="fas fa-chevron-right"></i>Início</a>
             <a href="#about"> <i class="fas fa-chevron-right"></i>Sobre</a>
             <a href="#services"> <i class="fas fa-chevron-right"></i>Horários</a>
             <a href="#contact"> <i class="fas fa-chevron-right"></i>Contato</a>
