@@ -338,7 +338,9 @@ Presentation
 Contact
 
 */
-
+.contact{
+    padding-bottom: 4rem;
+}
 .contact .row{
     display: flex;
     align-items: center;
@@ -413,7 +415,6 @@ Footer
 
 */
 .footer{
-    margin-top: 5rem;
     box-shadow: var(--header-box-shadow);
 }
 .footer .footer-container{

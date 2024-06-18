@@ -71,6 +71,7 @@ Cards
     justify-items: center;
     align-content: space-between;
     gap: 2rem;
+    padding-bottom: 3rem;
 }
 
 .exams-container .exams-cards{
