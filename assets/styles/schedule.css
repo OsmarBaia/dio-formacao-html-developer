@@ -8,7 +8,11 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 3rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
 }
+
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
@@ -22,6 +26,10 @@ th {
 
 td{
     font-size: 1.5rem;
+}
+
+div.table-mobile{
+    display: none;
 }
 
 /*
@@ -57,8 +65,6 @@ List
     color: var(--primary-text-color);
     margin: 0 .5rem 0 0;
 }
-
-
 /*
 
 Cards
@@ -98,7 +104,7 @@ Cards
    font-size: 1.7rem;
     color: var(--secondary-text-color);
     padding: .5rem;
-    text-shadow: var(--text-shadow);
+    /*text-shadow: var(--text-shadow);*/
 }
 
 .exams-container .exams-cards ul{
@@ -116,4 +122,18 @@ Cards
 .exams-container .exams-cards ul li i{
     color: var(--primary-text-color);
     margin: 0 0 0 1rem;
+}
+/*
+
+            Media queries
+
+*/
+@media (max-width: 375px) {
+    div.table-mobile{
+        display: block;
+    }
+
+    div.table{
+        display: none;
+    }
 }

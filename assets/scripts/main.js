@@ -10,19 +10,19 @@ menuBtn.addEventListener('click', () => {
     navbarMenu.classList.toggle('active');
 })
 
-window.onscroll = () => {
-    menuBtn.classList.remove('fa-times');
-    navbarMenu.classList.remove('active');
-}
-
-// Hide/show navbar on scroll
+// Navbar OnScroll effects
 let prevScrollPos = window.scrollY;
 window.onscroll = function() {
+    // Colapse floating panel
+    menuBtn.classList.remove('fa-times');
+    navbarMenu.classList.remove('active');
+
+    // Hide/show navbar on scroll
     let currentScrollPos = window.scrollY;
     if (prevScrollPos > currentScrollPos) {
         navbar.style.top = "0";
     } else {
-        navbar.style.top = "-100px";
+        navbar.style.top = "-10rem";
     }
     prevScrollPos = currentScrollPos;
 }

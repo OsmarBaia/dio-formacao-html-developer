@@ -23,6 +23,7 @@
     gap: 1.5rem;
     border: var(--border);
     box-shadow: var(--box-shadow);
+    border-radius: .5rem;
 }
 
 .contact-card i {
@@ -44,7 +45,7 @@
 .contact-card ul li{
     color: var(--tertiary-text-color);
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .contact-card ul li i{
@@ -54,6 +55,7 @@
 .contact-card h3{
     align-self: center;
     color: var(--secondary-text-color);
+    font-size: 1.7rem;
 }
 /*
 
