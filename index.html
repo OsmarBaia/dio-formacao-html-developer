@@ -18,8 +18,8 @@
 
     <!-- Scripts -->
     <script src="./assets/scripts/main.js" defer></script>
-    <script type='text/javascript' src='//code.jquery.com/jquery-compat-git.js' defer></script>
-    <script type='text/javascript' src='//igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js' defer></script>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-compat-git.js' defer></script>
+    <script type='text/javascript' src='https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js' defer></script>
     <script src="./assets/scripts/formHandler.js" defer></script>
 
     <!-- Page info -->
@@ -33,7 +33,7 @@ NavBar
 -->
 <header id="navbar" class="header">
     <a href="#" class="logo"><i class="fas fa-heartbeat"> MedCenter </i> </a>
-    <nav>
+    <nav aria-label="menu de navegação">
         <ul class="navbar">
             <li><a href="#">Início</a></li>
             <li><a href="./assets/pages/about.html">Sobre</a></li>
@@ -41,7 +41,7 @@ NavBar
             <li><a href="./assets/pages/contact.html">Contato</a></li>
         </ul>
     </nav>
-    <div id="menu-btn" class="fas fa-bars"></div>
+    <button aria-label="abri ou fechar menu" id="menu-btn" class="fas fa-bars"></button>
 </header>
 <!--
 
@@ -54,55 +54,57 @@ Content
     Banner
 
     -->
-    <section id="banner" class="banner">
-        <picture class="image">
-            <source srcset="assets/images/home.jpg" media="(min-width: 768px)">
-            <source srcset="assets/images/home_2.jpg" media="(max-width: 767px)">
-            <img src="assets/images/home.jpg" alt=""/>
-        </picture>
-
-        <div class="banner-content">
-            <h3>Sua saúde em primeiro lugar</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aut dolores enim libero quia quisquam quo recusandae reiciendis vitae! Aliquid aspernatur blanditiis, eos excepturi incidunt molestiae quo rerum suscipit.</p>
-            <button>
-                <a href="./assets/pages/about.html" class="btn">Saiba mais<span class="fas fa-chevron-right"></span></a>
-            </button>
+    <section id="banner" class="banner container">
+        <div class="row row-flex-center">
+            <picture class="column">
+                <source srcset="assets/images/home.jpg" media="(min-width: 768px)">
+                <source srcset="assets/images/home_2.jpg" media="(max-width: 767px)">
+                <img src="assets/images/home.jpg" alt=""/>
+            </picture>
+            <article class="column">
+                <h3 class="heading">Sua saúde em primeiro lugar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aut dolores enim libero quia quisquam quo recusandae reiciendis vitae! Aliquid aspernatur blanditiis, eos excepturi incidunt molestiae quo rerum suscipit.</p>
+                <button>
+                    <a href="./assets/pages/about.html" class="btn">Saiba mais<span class="fas fa-chevron-right"></span></a>
+                </button>
+            </article>
         </div>
     </section>
-
     <!--
 
     About
 
     -->
-    <section class="about-container">
-        <div class="about-cards">
-            <i class="fas fa-user-md"></i>
-            <h3>
-                140+
-            </h3>
-            <p>Especialistas</p>
-        </div>
-        <div class="about-cards">
-            <i class="fas fa-users"></i>
-            <h3>
-                1040+
-            </h3>
-            <p>Profissionais</p>
-        </div>
-        <div class="about-cards">
-            <i class="fas fa-procedures"></i>
-            <h3>
-                500+
-            </h3>
-            <p>Leitos</p>
-        </div>
-        <div class="about-cards">
-            <i class="fas fa-hospital"></i>
-            <h3>
-                3
-            </h3>
-            <p>Hospitais</p>
+    <section id="about-cards" class="container about-cards">
+        <div class="row cards-container">
+            <div class="column column-flex-center cards">
+                <i class="fas fa-user-md"></i>
+                <h3>
+                    140+
+                </h3>
+                <p>Especialistas</p>
+            </div>
+            <div class="cards column column-flex-center">
+                <i class="fas fa-users"></i>
+                <h3>
+                    1040+
+                </h3>
+                <p>Profissionais</p>
+            </div>
+            <div class="cards column column-flex-center">
+                <i class="fas fa-procedures"></i>
+                <h3>
+                    500+
+                </h3>
+                <p>Leitos</p>
+            </div>
+            <div class="cards column column-flex-center">
+                <i class="fas fa-hospital"></i>
+                <h3>
+                    3
+                </h3>
+                <p>Hospitais</p>
+            </div>
         </div>
     </section>
 
@@ -111,52 +113,51 @@ Content
     Services
 
     -->
-    <section class="services" id="services">
+    <section class="container about-services" id="about-services">
         <h1 class="heading"> Nossos <span>Serviços</span> </h1>
-        <div class="services-container">
-            <div class="services-cards">
+        <article class="cards-container">
+            <section class="cards column-flex-start">
                 <i class="fas fa-notes-medical"></i>
-                <h3>Checkup</h3>
+                <h3 class="heading">Check-up</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
                 <a href="./assets/pages/about.html" class="btn"> Saiba mais <span class="fas fa-chevron-right"></span> </a>
-            </div>
+            </section>
 
-            <div class="services-cards">
+            <section class="cards column-flex-start">
                 <i class="fas fa-ambulance"></i>
-                <h3>Emergência 24/7</h3>
+                <h3 class="heading">Emergência 24/7</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
                 <a href="./assets/pages/about.html" class="btn"> Saiba mais <span class="fas fa-chevron-right"></span> </a>
-            </div>
+            </section>
 
-            <div class="services-cards">
+            <section class="cards column-flex-start">
                 <i class="fas fa-laptop-medical"></i>
-                <h3>Telemedicina</h3>
+                <h3 class="heading">Telemedicina</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
                 <a href="./assets/pages/about.html" class="btn"> Saiba mais <span class="fas fa-chevron-right"></span> </a>
-            </div>
+            </section>
 
-            <div class="services-cards">
+            <section class="cards column-flex-start">
                 <i class="fas fa-pills"></i>
-                <h3>Ambulatórios</h3>
+                <h3 class="heading">Ambulatórios</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
                 <a href="./assets/pages/about.html" class="btn"> Saiba mais <span class="fas fa-chevron-right"></span> </a>
-            </div>
+            </section>
 
-            <div class="services-cards">
+            <section class="cards column-flex-start">
                 <i class="fas fa-procedures"></i>
-                <h3>Internação</h3>
+                <h3 class="heading">Internação</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
                 <a href="./assets/pages/about.html" class="btn"> Saiba mais <span class="fas fa-chevron-right"></span> </a>
-            </div>
+            </section>
 
-            <div class="services-cards">
+            <section class="cards column-flex-start">
                 <i class="fas fa-house-medical"></i>
-                <h3>atendimento domiciliar</h3>
+                <h3 class="heading">atendimento domiciliar</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
                 <a href="./assets/pages/about.html" class="btn"> Saiba mais <span class="fas fa-chevron-right"></span> </a>
-            </div>
-
-        </div>
+            </section>
+        </article>
     </section>
 
     <!--
@@ -164,18 +165,18 @@ Content
     Presentation
 
     -->
-    <section class="presentation" id="about">
+    <section class="about-presentation container" id="about-presentation">
         <h1 class="heading"> <span>Sobre</span> Nós </h1>
-        <div class="row">
-            <div class="image">
+        <div class="row row-flex-center">
+            <picture class="image">
                 <img src="./assets/images/about-no-bg.png" alt="">
-            </div>
-            <div class="presentation-content">
-                <h3>Sua saúdo é nossa missão</h3>
+            </picture>
+            <article class="presentation-content">
+                <h3 class="heading">Sua saúdo é nossa missão</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus, quod ex cupiditate ullam in assumenda maiores et culpa odit tempora ipsam qui, quisquam quis facere iste fuga, minus nesciunt.</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus vero ipsam laborum porro voluptates voluptatibus a nihil temporibus deserunt vel?</p>
                 <a href="./assets/pages/about.html" class="btn"> Saiba mais <span class="fas fa-chevron-right"></span> </a>
-            </div>
+            </article>
         </div>
     </section>
 
@@ -184,21 +185,22 @@ Content
     Contact
 
     -->
-    <section class="contact" id="contact">
+    <section class="contact container" id="contact">
         <h1 class="heading"> Fale <span>Conosco</span></h1>
         <div class="row">
-            <div class="image">
-                <img src="./assets/images/contact.jpg" alt="">
+            <div class="row-flex-center">
+                <picture class="image">
+                    <img src="./assets/images/contact.jpg" alt="">
+                </picture>
+                <!-- TODO: Add form validation-->
+                <form class="column-flex-start" action="" method="">
+                    <label for="name">Nome: </label><input type="text" id="name" name="name" placeholder="João Silva" class="form-input">
+                    <label for="number">Telefone: </label><input type="number" id="number" name="number" placeholder="(00) 00000-0000" class="form-input">
+                    <label for="email">E-mail: </label><input type="email" id="email" name="email" placeholder="joaosilva@email.com" class="form-input">
+                    <label for="message">Mensagem: </label><textarea name="message" id="message" class="message" placeholder="Duvidas, Sugestões, Agendamentos..."></textarea>
+                    <input type="submit" id="submit" name="submit" value="Enviar" class="btn">
+                </form>
             </div>
-            <!-- TODO: Add form validation-->
-            <form action="" method="">
-                <h3>Contato</h3>
-                <label for="name">Nome: </label><input type="text" id="name" name="name" placeholder="João Silva" class="form-input">
-                <label for="number">Telefone: </label><input type="number" id="number" name="number" placeholder="(00) 00000-0000" class="form-input">
-                <label for="email">E-mail: </label><input type="email" id="email" name="email" placeholder="joaosilva@email.com" class="form-input">
-                <label for="message">Mensagem: </label><textarea name="message" id="message" class="message" placeholder="Duvidas, Sugestões, Agendamentos..."></textarea>
-                <input type="submit" id="submit" name="submit" value="Enviar" class="btn">
-            </form>
         </div>
     </section>
 </main>
@@ -207,32 +209,51 @@ Content
     Footer
 
     -->
-<footer class="footer">
-    <div class="footer-container">
+<footer class="footer container">
+    <div class="row footer-container">
         <div class="box">
-            <h3>Navegação</h3>
-            <a href="index.html"> <i class="fas fa-chevron-right"></i>Início</a>
-            <a href="./assets/pages/about.html"> <i class="fas fa-chevron-right"></i>Sobre</a>
-            <a href="./assets/pages/schedule.html"> <i class="fas fa-chevron-right"></i>Horários</a>
-            <a href="./assets/pages/contact.html"> <i class="fas fa-chevron-right"></i>Contato</a>
+            <h3 class="heading">Navegação</h3>
+            <ul class="column-flex-start">
+                <li><a href="index.html"> <i class="fas fa-chevron-right"></i>Início</a>
+                </li>
+                <li><a href="./assets/pages/about.html"> <i class="fas fa-chevron-right"></i>Sobre</a>
+                </li>
+                <li><a href="./assets/pages/schedule.html"> <i class="fas fa-chevron-right"></i>Horários</a>
+                </li>
+                <li><a href="./assets/pages/contact.html"> <i class="fas fa-chevron-right"></i>Contato</a>
+                </li>
+            </ul>
         </div>
         <div class="box">
-            <h3> Departamentos </h3>
-            <a href="./assets/pages/about.html#clinica-geral"> <i class="fas fa-chevron-right"></i>Clínica geral</a>
-            <a href="./assets/pages/about.html#psicologia"> <i class="fas fa-chevron-right"></i>Psicologia</a>
-            <a href="./assets/pages/about.html#pediatria"> <i class="fas fa-chevron-right"></i>Pediatria</a>
-            <a href="./assets/pages/about.html#oftalmologia"> <i class="fas fa-chevron-right"></i>Oftalmologia</a>
+            <h3 class="heading"> Departamentos </h3>
+            <ul class="column-flex-start">
+                <li><a href="./assets/pages/about.html#clinica-geral"> <i class="fas fa-chevron-right"></i>Clínica geral</a>
+                </li>
+                <li><a href="./assets/pages/about.html#psicologia"> <i class="fas fa-chevron-right"></i>Psicologia</a>
+                </li>
+                <li><a href="./assets/pages/about.html#pediatria"> <i class="fas fa-chevron-right"></i>Pediatria</a>
+                </li>
+                <li><a href="./assets/pages/about.html#oftalmologia"> <i class="fas fa-chevron-right"></i>Oftalmologia</a>
+                </li>
+            </ul>
         </div>
 
         <div class="box">
-            <h3>Contato</h3>
-            <a href="tel:+559100000000"> <i class="fas fa-phone"></i> +559100000000 </a>
-            <a href="https://api.whatsapp.com/send?phone=+5591900000000"> <i class="fa-brands fa-square-whatsapp"></i> +5591900000000 </a>
-            <a href="mailto:medcare@email.com"> <i class="fas fa-envelope"></i> medcare@email.com </a>
-            <a href="https://www.google.com/maps?q=Avenida+Almirante+Barroso,+Belem+Para,+Brazil"> <i class="fas fa-map-marker-alt"></i> Avenida almirante barroso 0000, Belém-PA</a>
+            <h3 class="heading">Contato</h3>
+            <ul class="column-flex-start" >
+                <li><a href="tel:+559100000000"> <i class="fas fa-phone"></i> +559100000000 </a>
+                </li>
+                <li><a href="https://api.whatsapp.com/send?phone=+5591900000000"> <i class="fa-brands fa-square-whatsapp"></i> +5591900000000 </a>
+                </li>
+                <li><a href="mailto:medcare@email.com"> <i class="fas fa-envelope"></i> medcare@email.com </a>
+                </li>
+                <li><a href="https://www.google.com/maps?q=Avenida+Almirante+Barroso,+Belem+Para,+Brazil"> <i class="fas fa-map-marker-alt"></i> Avenida almirante barroso 0000, Belém-PA</a>
+                </li>
+            </ul>
+
         </div>
         <div class="box">
-            <h3>Venha nos visitar</h3>
+            <h3 class="heading">Venha nos visitar</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6893.219848380879!2d-48.46334270764635!3d-1.4360844360911815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48c7310e9f26f%3A0x4503d4deea772127!2sHospital%20Adventista%20de%20Bel%C3%A9m!5e0!3m2!1spt-BR!2sbr!4v1718577176716!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>

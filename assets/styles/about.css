@@ -4,14 +4,9 @@
             General
 
 */
-section{
-    padding: 2rem 9%;
-}
-
 #banner{
     padding: 10rem 9% 2rem;
 }
-
 .banner-content h3{
     font-size: 3rem;
 }
@@ -26,11 +21,12 @@ section{
 
 */
 .departments{
-   text-align: center;
-    padding: 2rem 9%;
+    text-align: center;
+    width: 100%;
 }
 
 .departments .departments-container{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -40,6 +36,8 @@ section{
 }
 
 .departments .departments-container .row{
+    width: 100%;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -50,7 +48,6 @@ section{
 }
 .departments .departments-container .row .content{
     flex:1 1 45rem;
-
 }
 .departments .departments-container .row .image img{
     width:100%;

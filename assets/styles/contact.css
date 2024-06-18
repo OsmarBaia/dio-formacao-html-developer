@@ -51,6 +51,17 @@
 .contact-card ul li i{
     margin-right: .5rem;
 }
+.contact-card ul li a:link{
+   color: var(--primary-text-color);
+}
+
+.contact-card ul li a:visited{
+    color: var(--primary-text-color);
+}
+
+.contact-card ul li a:active {
+    color: var(--primary-text-color);
+}
 
 .contact-card h3{
     align-self: center;
