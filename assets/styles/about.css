@@ -1,12 +1,33 @@
 @import "styles.css";
+/*
+
+            General
+
+*/
+section{
+    padding: 2rem 9%;
+}
+
+#banner{
+    padding: 10rem 9% 2rem;
+}
+
+.banner-content h3{
+    font-size: 3rem;
+}
+
+#about .presentation-content h3{
+    font-size: 3rem;
+}
 
 /*
 
-Departments
+            Departments
 
 */
 .departments{
    text-align: center;
+    padding: 2rem 9%;
 }
 
 .departments .departments-container{
@@ -15,13 +36,14 @@ Departments
     align-items: flex-start;
     justify-content: space-between;
     gap: 2rem;
+    padding-bottom: 3rem;
 }
 
 .departments .departments-container .row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     text-align: start;
-    padding: 1rem;
 }
 .departments .departments-container .row .image{
     flex:1 1 45rem;
@@ -37,7 +59,7 @@ Departments
 .departments .departments-container .row h3{
     color: var(--secondary-text-color);
     text-shadow: var(--text-shadow);
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.8;
 }
 .departments .departments-container .row p{
@@ -66,3 +88,9 @@ Departments
     display: flex;
     flex-direction: row-reverse;
 }
+
+/*
+
+            Media Queries
+
+*/

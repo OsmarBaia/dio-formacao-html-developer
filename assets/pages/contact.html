@@ -10,7 +10,7 @@
   <link rel="icon" type="image/x-icon" href="">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/contact.css">
   <!-- Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -23,6 +23,7 @@
   <title>MedCenter - Contato</title>
 </head>
 <body>
+
 <!--
 
 NavBar
@@ -64,8 +65,49 @@ Content
     Contact - Cards
 
     -->
-  <section class="contact">
+  <section class="contact-cards">
+    <h1 class="heading"> Fale <span>Conosco</span></h1>
+  <div class="container">
+    <div class="contact-card">
+      <h3> CENTRAL
+      </h3>
+      <i class="fas fa-headset"></i>
+      <ul>
+        <li><i class="fas fa-chevron-right"></i> Telefone: <a href="tel:">91930000000</a></li>
+        <li><i class="fas fa-chevron-right"></i> E-mail: <a href="mailto:">mecare@mail.com</a></li>
+      </ul>
+    </div>
+    <div class="contact-card">
+      <h3>
+        EXAME OU CONSULTA
+      </h3>
+      <i class="fas fa-user-doctor"></i>
+      <ul>
+        <li><i class="fas fa-chevron-right"></i> Telefone: <a href="tel:">91930000000</a></li>
+        <li><i class="fas fa-chevron-right"></i> E-mail: <a href="mailto:">mecare@mail.com</a></li>
+      </ul>
+    </div>
+    <div class="contact-card">
+      <h3>  COLETA LABORATORIAL
+      </h3>
+      <i class="fas fa-flask-vial"></i>
+      <ul>
+        <li><i class="fas fa-chevron-right"></i> Telefone: <a href="tel:">91930000000</a></li>
+        <li><i class="fas fa-chevron-right"></i> E-mail: <a href="mailto:">mecare@mail.com</a></li>
+      </ul>
+    </div>
+    <div class="contact-card">
+      <h3> AUTO ATENDIMENTO
+      </h3>
+      <i class="fas fa-mobile-screen-button"></i>
+      <ul>
+        <li><i class="fas fa-chevron-right"></i> Site: <a href="#">agenda.medcare.org.br</a></li>
+        <li><i class="fas fa-chevron-right"></i> Android: <a href="#">Play Store</a></li>
+        <li><i class="fas fa-chevron-right"></i> iPhone: <a href="#">Apple Store</a></li>
+      </ul>
 
+    </div>
+  </div>
   </section>
   <!--
 
@@ -73,10 +115,9 @@ Content
 
   -->
   <section class="contact">
-    <h1 class="heading"> Fale <span>Conosco</span></h1>
+    <!-- TODO: Add form validation-->
     <div class="row">
-      <!-- TODO: Add form validation-->
-      <form action="" method="">
+      <form class="contact-form" action="" method="">
         <h3>Contato</h3>
         <label for="name">Nome: </label><input type="text" id="name" name="name" placeholder="João Silva" class="form-input">
         <label for="number">Telefone: </label><input type="number" id="number" name="number" placeholder="(00) 00000-0000" class="form-input">
@@ -84,11 +125,11 @@ Content
         <label for="message">Mensagem: </label><textarea name="message" id="message" class="message" placeholder="Duvidas, Sugestões, Agendamentos..."></textarea>
         <input type="submit" id="submit" name="submit" value="Enviar" class="btn">
       </form>
-      <!-- TODO: Add map -->
-      <div class="image">
-        <img src="../images/contact.jpg" alt="">
+      <div class="contact-address">
+        <h3>Endereço</h3>
+        <p>Avenida almirante barroso 0000, Belém-PA</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6893.219848380879!2d-48.46334270764635!3d-1.4360844360911815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48c7310e9f26f%3A0x4503d4deea772127!2sHospital%20Adventista%20de%20Bel%C3%A9m!5e0!3m2!1spt-BR!2sbr!4v1718577176716!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-
     </div>
   </section>
 </main>

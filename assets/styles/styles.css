@@ -415,13 +415,13 @@ Footer
 
 */
 .footer{
+    padding: 2rem 9%;
     box-shadow: var(--header-box-shadow);
 }
 .footer .footer-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap:2rem;
-    padding: 2rem 3rem 0 3rem;
 }
 
 .footer .footer-container .box h3{
@@ -492,7 +492,6 @@ Footer
 
     .footer .footer-container{
         grid-template-columns: repeat(4, 1fr);
-        padding: 0 10rem;
     }
 
     .banner {
