@@ -29,9 +29,9 @@
 NavBar
 
 -->
-<header id="navbar"  class="header">
-  <a href="../../index.html" class="logo"><i class="fas fa-heartbeat"> MedCenter </i> </a>
-  <nav>
+<header id="navbar" class="header">
+  <a href="#" class="logo"><i class="fas fa-heartbeat"> MedCenter </i> </a>
+  <nav aria-label="menu de navegação">
     <ul class="navbar">
       <li><a href="../../index.html">Início</a></li>
       <li><a href="./about.html">Sobre</a></li>
@@ -39,7 +39,7 @@ NavBar
       <li><a href="./contact.html">Contato</a></li>
     </ul>
   </nav>
-  <div id="menu-btn" class="fas fa-bars"></div>
+  <button aria-label="abri ou fechar menu" id="menu-btn" class="fas fa-bars"></button>
 </header>
 <!--
 
@@ -138,32 +138,51 @@ Content
 Footer
 
 -->
-<footer class="footer">
-  <div class="footer-container">
+<footer class="footer container">
+  <div class="row footer-container">
     <div class="box">
-      <h3>Navegação</h3>
-      <a href="../../index.html"> <i class="fas fa-chevron-right"></i>Início</a>
-      <a href="../pages/about.html"> <i class="fas fa-chevron-right"></i>Sobre</a>
-      <a href="../pages/schedule.html"> <i class="fas fa-chevron-right"></i>Horários</a>
-      <a href="../pages/contact.html"> <i class="fas fa-chevron-right"></i>Contato</a>
+      <h3 class="heading">Navegação</h3>
+      <ul class="column-flex-start">
+        <li><a href="../../index.html"> <i class="fas fa-chevron-right"></i>Início</a>
+        </li>
+        <li><a href="./about.html"> <i class="fas fa-chevron-right"></i>Sobre</a>
+        </li>
+        <li><a href="./schedule.html"> <i class="fas fa-chevron-right"></i>Horários</a>
+        </li>
+        <li><a href="./contact.html"> <i class="fas fa-chevron-right"></i>Contato</a>
+        </li>
+      </ul>
     </div>
     <div class="box">
-      <h3> Departamentos </h3>
-      <a href="./about.html#clinica-geral"> <i class="fas fa-chevron-right"></i>Clínica geral</a>
-      <a href="./about.html#psicologia"> <i class="fas fa-chevron-right"></i>Psicologia</a>
-      <a href="./about.html#pediatria"> <i class="fas fa-chevron-right"></i>Pediatria</a>
-      <a href="./about.html#oftalmologia"> <i class="fas fa-chevron-right"></i>Oftalmologia</a>
+      <h3 class="heading"> Departamentos </h3>
+      <ul class="column-flex-start">
+        <li><a href="./about.html#clinica-geral"> <i class="fas fa-chevron-right"></i>Clínica geral</a>
+        </li>
+        <li><a href="./about.html#psicologia"> <i class="fas fa-chevron-right"></i>Psicologia</a>
+        </li>
+        <li><a href="./about.html#pediatria"> <i class="fas fa-chevron-right"></i>Pediatria</a>
+        </li>
+        <li><a href="./about.html#oftalmologia"> <i class="fas fa-chevron-right"></i>Oftalmologia</a>
+        </li>
+      </ul>
     </div>
 
     <div class="box">
-      <h3>Contato</h3>
-      <a href="tel:+559100000000"> <i class="fas fa-phone"></i> +559100000000 </a>
-      <a href="https://api.whatsapp.com/send?phone=+5591900000000"> <i class="fa-brands fa-square-whatsapp"></i> +5591900000000 </a>
-      <a href="mailto:medcare@email.com"> <i class="fas fa-envelope"></i> medcare@email.com </a>
-      <a href="https://www.google.com/maps?q=Avenida+Almirante+Barroso,+Belem+Para,+Brazil"> <i class="fas fa-map-marker-alt"></i> Avenida almirante barroso 0000, Belém-PA</a>
+      <h3 class="heading">Contato</h3>
+      <ul class="column-flex-start" >
+        <li><a href="tel:+559100000000"> <i class="fas fa-phone"></i> +559100000000 </a>
+        </li>
+        <li><a href="https://api.whatsapp.com/send?phone=+5591900000000"> <i class="fa-brands fa-square-whatsapp"></i> +5591900000000 </a>
+        </li>
+        <li><a href="mailto:medcare@email.com"> <i class="fas fa-envelope"></i> medcare@email.com </a>
+        </li>
+        <li><a href="https://www.google.com/maps?q=Avenida+Almirante+Barroso,+Belem+Para,+Brazil"> <i class="fas fa-map-marker-alt"></i> Avenida almirante barroso 0000, Belém-PA</a>
+        </li>
+      </ul>
+
     </div>
     <div class="box">
-      <h3>Venha nos visitar</h3>
+      <h3 class="heading">Venha nos visitar</h3>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6893.219848380879!2d-48.46334270764635!3d-1.4360844360911815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48c7310e9f26f%3A0x4503d4deea772127!2sHospital%20Adventista%20de%20Bel%C3%A9m!5e0!3m2!1spt-BR!2sbr!4v1718577176716!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>

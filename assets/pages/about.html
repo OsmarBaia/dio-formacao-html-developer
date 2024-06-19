@@ -29,11 +29,9 @@
 NavBar
 
 -->
-<header id="navbar" class="header row">
-    <div>
-        <a href="../../index.html" class="logo"><i class="fas fa-heartbeat"> MedCenter</i></a>
-    </div>
-    <nav aria-label="menu principal">
+<header id="navbar" class="header">
+    <a href="#" class="logo"><i class="fas fa-heartbeat"> MedCenter </i> </a>
+    <nav aria-label="menu de navegação">
         <ul class="navbar">
             <li><a href="../../index.html">Início</a></li>
             <li><a href="./about.html">Sobre</a></li>
@@ -41,7 +39,7 @@ NavBar
             <li><a href="./contact.html">Contato</a></li>
         </ul>
     </nav>
-    <button aria-label="abrir ou fechar menu" id="menu-btn" class="fas fa-bars"></button>
+    <button aria-label="abri ou fechar menu" id="menu-btn" class="fas fa-bars"></button>
 </header>
 <!--
 
@@ -54,16 +52,16 @@ Content
     Banner
 
     -->
-    <section id="banner" class="banner row">
-        <div class="container">
-            <picture class="image column">
+    <section id="banner" class="banner container">
+        <div class="row row-flex-center">
+            <picture class="column">
                 <source srcset="../images/about.jpg" media="(min-width: 768px)">
                 <source srcset="../images/about.jpg" media="(max-width: 767px)">
                 <!--TODO: Add alt description-->
                 <img src="../images/about.jpg" alt=""/>
             </picture>
             <article class="banner-content column">
-                <h3>Quem somos</h3>
+                <h3 class="heading">Quem somos</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aut dolores enim libero quia quisquam quo recusandae reiciendis vitae! Aliquid aspernatur blanditiis, eos excepturi incidunt molestiae quo rerum suscipit.</p>
             </article>
         </div>
@@ -73,14 +71,14 @@ Content
     Mission
 
     -->
-    <section class="presentation" id="about">
+    <section class="about-presentation container" id="about">
         <h1 class="heading"> Nossa <span>Missão</span></h1>
-        <div class="row">
-            <picture class="image column">
+        <div class="row row-flex-center">
+            <picture class="column">
                 <img src="../images/mission-no-bg.png" alt="">
             </picture>
-            <article class="presentation-content column">
-                <h3>Sua saúdo é nossa missão</h3>
+            <article class="column">
+                <h3 class="heading">Sua saúdo é nossa missão</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus, quod ex cupiditate ullam in assumenda maiores et culpa odit tempora ipsam qui, quisquam quis facere iste fuga, minus nesciunt.</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus vero ipsam laborum porro voluptates voluptatibus a nihil temporibus deserunt vel?</p>
             </article>
@@ -91,17 +89,17 @@ Content
     Departments
 
     -->
-    <section class="departments">
+    <section id="departments" class="container">
         <h1 class="heading"> Nossos <span>Serviços</span></h1>
-        <div class="container departments-container">
-            <section id="clinica-geral" class="row">
-                <picture class="image column">
+        <div id="departments-container" class="column column-flex-center">
+            <article id="clinica-geral" class="row row-flex-center">
+                <picture class="column column-flex-center">
                     <img src="../images/clinica-geral.jpg" alt="">
                 </picture>
-                <article class="content column">
-                    <h3>Clínica Geral</h3>
+                <div class="column column-flex-start">
+                    <h3 class="heading" >Clínica Geral</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus, quod ex cupiditate ullam in assumenda maiores et culpa odit tempora ipsam qui, quisquam quis facere iste fuga, minus nesciunt.</p>
-                    <ul>
+                    <ul class="column-flex-start">
                         <li><i class="fas fa-chevron-right"></i> Consultas</li>
                         <li><i class="fas fa-chevron-right"></i> Exames</li>
                         <li><i class="fas fa-chevron-right"></i> Telemedicina</li>
@@ -115,16 +113,16 @@ Content
                     <button aria-label="Agendar consulta">
                         <a href="../pages/contact.html" class="btn"> Agende uma consulta <span class="fas fa-chevron-right"></span> </a>
                     </button>
-                </article>
-            </section>
-            <section id="psicologia" class="row">
-                <picture class="image">
+                </div>
+            </article>
+            <article id="psicologia" class="row row-flex-center">
+                <picture class="column column-flex-start">
                     <img src="../images/psicologia.jpg" alt="">
                 </picture>
-                <article class="content">
-                    <h3>Psicologia</h3>
+                <div class="column column-flex-start">
+                    <h3 class="heading">Psicologia</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus, quod ex cupiditate ullam in assumenda maiores et culpa odit tempora ipsam qui, quisquam quis facere iste fuga, minus nesciunt.</p>
-                    <ul>
+                    <ul class="column-flex-start">
                         <li><i class="fas fa-chevron-right"></i> Psicoterapia individual</li>
                         <li><i class="fas fa-chevron-right"></i> Psicoterapia em grupo</li>
                         <li><i class="fas fa-chevron-right"></i> Psicoterapia online</li>
@@ -137,16 +135,16 @@ Content
                     <button>
                         <a href="../pages/contact.html" class="btn"> Agende uma consulta <span class="fas fa-chevron-right"></span> </a>
                     </button>
-                </article>
-            </section>
-            <section id="pediatria" class="row">
-                <picture class="image">
+                </div>
+            </article>
+            <article id="pediatria" class="row row-flex-center">
+                <picture class="column">
                     <img src="../images/pediatria.jpg" alt="">
                 </picture>
-                <article class="content">
-                    <h3>Pediatria</h3>
+                <div class="column column-flex-start">
+                    <h3 class="heading">Pediatria</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus, quod ex cupiditate ullam in assumenda maiores et culpa odit tempora ipsam qui, quisquam quis facere iste fuga, minus nesciunt.</p>
-                    <ul>
+                    <ul class="column-flex-start">
                         <li><i class="fas fa-chevron-right"></i> Neonatologia</li>
                         <li><i class="fas fa-chevron-right"></i> Nutrologia pediátrica</li>
                         <li><i class="fas fa-chevron-right"></i> Nefrologia pediátrica</li>
@@ -159,16 +157,17 @@ Content
                     <button>
                         <a href="../pages/contact.html" class="btn"> Agende uma consulta <span class="fas fa-chevron-right"></span> </a>
                     </button>
-                </article>
-            </section>
-            <section id="oftalmologia" class="row">
-                <picture class="image">
+                </div>
+            </article>
+
+            <article id="oftalmologia" class="row row-flex-center">
+                <picture class="column">
                     <img src="../images/oftalmologia.jpg" alt="">
                 </picture>
-                <article class="content">
-                    <h3>Oftalmologia</h3>
+                <div class="column column-flex-start">
+                    <h3 class="heading">Oftalmologia</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus, quod ex cupiditate ullam in assumenda maiores et culpa odit tempora ipsam qui, quisquam quis facere iste fuga, minus nesciunt.</p>
-                    <ul>
+                    <ul class="column-flex-start">
                         <li><i class="fas fa-chevron-right"></i> Oftalmologia Geral</li>
                         <li><i class="fas fa-chevron-right"></i> Oftalmo-pediatria</li>
                         <li><i class="fas fa-chevron-right"></i> Plástica Ocular</li>
@@ -181,9 +180,14 @@ Content
                     <button>
                         <a href="../pages/contact.html" class="btn"> Agende uma consulta <span class="fas fa-chevron-right"></span> </a>
                     </button>
-                </article>
-            </section>
+                </div>
+            </article>
         </div>
+
+
+
+
+
     </section>
 </main>
 <!--
@@ -191,33 +195,53 @@ Content
 Footer
 
 -->
-<footer class="footer">
-    <div class="footer-container">
-        <section class="box">
-            <h3>Navegação</h3>
-            <a href="../../index.html"> <i class="fas fa-chevron-right"></i>Início</a>
-            <a href="../pages/about.html"> <i class="fas fa-chevron-right"></i>Sobre</a>
-            <a href="../pages/schedule.html"> <i class="fas fa-chevron-right"></i>Horários</a>
-            <a href="../pages/contact.html"> <i class="fas fa-chevron-right"></i>Contato</a>
-        </section>
-        <section class="box">
-            <h3> Departamentos </h3>
-            <a href="#clinica-geral"> <i class="fas fa-chevron-right"></i>Clínica geral</a>
-            <a href="#psicologia"> <i class="fas fa-chevron-right"></i>Psicologia</a>
-            <a href="#pediatria"> <i class="fas fa-chevron-right"></i>Pediatria</a>
-            <a href="#oftalmologia"> <i class="fas fa-chevron-right"></i>Oftalmologia</a>
-        </section>
-        <section class="box">
-            <h3>Contato</h3>
-            <a href="tel:+559100000000"> <i class="fas fa-phone"></i> +559100000000 </a>
-            <a href="https://api.whatsapp.com/send?phone=+5591900000000"> <i class="fa-brands fa-square-whatsapp"></i> +5591900000000 </a>
-            <a href="mailto:medcare@email.com"> <i class="fas fa-envelope"></i> medcare@email.com </a>
-            <a href="https://www.google.com/maps?q=Avenida+Almirante+Barroso,+Belem+Para,+Brazil"> <i class="fas fa-map-marker-alt"></i> Avenida almirante barroso 0000, Belém-PA</a>
-        </section>
-        <section class="box">
-            <h3>Venha nos visitar</h3>
+<footer class="footer container">
+    <div class="row footer-container">
+        <div class="box">
+            <h3 class="heading">Navegação</h3>
+            <ul class="column-flex-start">
+                <li><a href="../../index.html"> <i class="fas fa-chevron-right"></i>Início</a>
+                </li>
+                <li><a href="./about.html"> <i class="fas fa-chevron-right"></i>Sobre</a>
+                </li>
+                <li><a href="./schedule.html"> <i class="fas fa-chevron-right"></i>Horários</a>
+                </li>
+                <li><a href="./contact.html"> <i class="fas fa-chevron-right"></i>Contato</a>
+                </li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3 class="heading"> Departamentos </h3>
+            <ul class="column-flex-start">
+                <li><a href="./about.html#clinica-geral"> <i class="fas fa-chevron-right"></i>Clínica geral</a>
+                </li>
+                <li><a href="./about.html#psicologia"> <i class="fas fa-chevron-right"></i>Psicologia</a>
+                </li>
+                <li><a href="./about.html#pediatria"> <i class="fas fa-chevron-right"></i>Pediatria</a>
+                </li>
+                <li><a href="./about.html#oftalmologia"> <i class="fas fa-chevron-right"></i>Oftalmologia</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3 class="heading">Contato</h3>
+            <ul class="column-flex-start" >
+                <li><a href="tel:+559100000000"> <i class="fas fa-phone"></i> +559100000000 </a>
+                </li>
+                <li><a href="https://api.whatsapp.com/send?phone=+5591900000000"> <i class="fa-brands fa-square-whatsapp"></i> +5591900000000 </a>
+                </li>
+                <li><a href="mailto:medcare@email.com"> <i class="fas fa-envelope"></i> medcare@email.com </a>
+                </li>
+                <li><a href="https://www.google.com/maps?q=Avenida+Almirante+Barroso,+Belem+Para,+Brazil"> <i class="fas fa-map-marker-alt"></i> Avenida almirante barroso 0000, Belém-PA</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="box">
+            <h3 class="heading">Venha nos visitar</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6893.219848380879!2d-48.46334270764635!3d-1.4360844360911815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48c7310e9f26f%3A0x4503d4deea772127!2sHospital%20Adventista%20de%20Bel%C3%A9m!5e0!3m2!1spt-BR!2sbr!4v1718577176716!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+        </div>
     </div>
     <div class="credit">  feito por <span>osmarbaia@2024</span></div>
 </footer>

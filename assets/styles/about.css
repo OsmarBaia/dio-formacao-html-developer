@@ -1,88 +1,23 @@
 @import "styles.css";
 /*
 
-            General
-
-*/
-#banner{
-    padding: 10rem 9% 2rem;
-}
-.banner-content h3{
-    font-size: 3rem;
-}
-
-#about .presentation-content h3{
-    font-size: 3rem;
-}
-
-/*
-
             Departments
 
 */
-.departments{
-    text-align: center;
-    width: 100%;
+#departments ul{
+    max-height: 20rem;
 }
 
-.departments .departments-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 2rem;
-    padding-bottom: 3rem;
-}
-
-.departments .departments-container .row{
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: start;
-}
-.departments .departments-container .row .image{
-    flex:1 1 45rem;
-}
-.departments .departments-container .row .content{
-    flex:1 1 45rem;
-}
-.departments .departments-container .row .image img{
-    width:100%;
-    height:auto;
-}
-.departments .departments-container .row h3{
-    color: var(--secondary-text-color);
-    text-shadow: var(--text-shadow);
-    font-size: 3rem;
-    line-height: 1.8;
-}
-.departments .departments-container .row p{
-    color: var(--tertiary-text-color);
-    padding:1rem 0;
-    font-size: 1.5rem;
-    line-height: 1.8;
-}
-
-.departments .departments-container .row ul i{
-   color: var(--primary-text-color);
-
-}
-.departments .departments-container .row ul{
+#departments ul li{
     font-size: 1.7rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.departments .departments-container .row ul li{
-    font-size: 1.5rem;
     color: var(--tertiary-text-color);
-    list-style: none;
-    display: block;
 }
-.departments .departments-container .row:nth-child(even){
-    display: flex;
+
+#departments #departments-container article .column{
+    flex: 1 1 45rem;
+}
+
+#departments article.row.row-flex-center:nth-child(even){
     flex-direction: row-reverse;
 }
 
@@ -91,3 +26,8 @@
             Media Queries
 
 */
+@media (max-width: 500px) {
+    #departments ul{
+        max-height: 40rem;
+    }
+}

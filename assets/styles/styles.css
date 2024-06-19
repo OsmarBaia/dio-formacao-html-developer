@@ -80,14 +80,29 @@ html{
 .row{
     width: 100%;
     height: auto;
-    padding: 2rem 9%;
+    /*padding: 2rem 9%;*/
 }
-
 
 .row-flex-center{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    gap:1.5rem;
+}
+
+.row-flex-center{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap:1.5rem;
+}
+
+.row-flex-start{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
     justify-content: space-between;
     gap:1.5rem;
 }
@@ -101,13 +116,19 @@ section:nth-child(even){
     background-color: var(--background-color-alt);
 }
 
+section:nth-child(even) .row.row-flex-center{
+    flex-direction: row-reverse;
+}
+
 section picture{
     flex: 1 1 45rem;
+
 }
 
 section picture img{
     width: 100%;
     height: auto;
+    max-width: 800px;
 }
 
 section p{
@@ -313,7 +334,7 @@ article .heading{
 */
 
 .banner{
-    padding: 10rem 0;
+    padding: 10rem 9%;
 }
 
 .banner article{
@@ -348,6 +369,11 @@ article .heading{
 .about-services .cards{
     min-height: 40rem;
 }
+.about-services .cards h3.heading{
+    text-align: start;
+    font-size: 3rem;
+}
+
 
 /*
 
@@ -428,6 +454,7 @@ Footer
 */
 
 .footer{
+    padding: 2rem 9%;
     box-shadow: var(--header-box-shadow);
 }
 
@@ -486,6 +513,19 @@ footer .column-flex-start{
 *               Media Queries
  * ----------------------------------------
 */
+@media (min-width: 1500px) {
+    .footer .footer-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media (min-width: 1147px) and (max-width: 1500px) {
+    .footer .footer-container{
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    }
+}
+
 
 @media (max-width: 1050px) {
     html{
@@ -504,10 +544,6 @@ footer .column-flex-start{
         align-items: center;
     }
 
-    .about-services .cards h3.heading{
-        font-size: 3rem;
-    }
-
     .footer .footer-container{
         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     }
@@ -521,7 +557,7 @@ footer .column-flex-start{
     .about-services .cards-container{
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     }
-    
+
     .footer .footer-container{
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     }
