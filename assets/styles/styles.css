@@ -334,17 +334,18 @@ article .heading{
 */
 
 .banner{
-    padding: 10rem 9%;
+    padding: 15rem 9% 3rem;
 }
 
-.banner article{
+.banner .column{
     flex: 1 1 45rem;
 }
 
-.banner h3.heading{
+.banner .column h1.heading{
     line-height:1.8;
-    text-align: start;
+    text-align: center;
 }
+
 
 /*
 

@@ -32,7 +32,7 @@ NavBar
 
 -->
 <header id="navbar" class="header">
-    <a href="#" class="logo"><i class="fas fa-heartbeat"> MedCenter </i> </a>
+    <a href="../../index.html" class="logo"><i class="fas fa-heartbeat"> MedCenter </i> </a>
     <nav aria-label="menu de navegação">
         <ul class="navbar">
             <li><a href="../../index.html">Início</a></li>
@@ -54,200 +54,196 @@ Content
     Banner
 
     -->
-    <section id="banner" class="banner">
-        <picture class="image">
-            <source srcset="../images/schedule.jpg" media="(min-width: 768px)">
-            <source srcset="../images/schedule.jpg" media="(max-width: 767px)">
-            <!--TODO: Add alt description-->
-            <img src="../images/schedule.jpg" alt=""/>
-        </picture>
-    </section>
-    <!--
+    <section id="banner" class="banner container">
+        <div class="row row-flex-start">
+            <picture class="column">
+                <source srcset="../images/schedule.jpg" media="(min-width: 768px)">
+                <source srcset="../images/schedule.jpg" media="(max-width: 767px)">
+                <!--TODO: Add alt description-->
+                <img src="../images/schedule.jpg" alt=""/>
+            </picture>
 
-    Banner
-
-    -->
-    <section>
-        <div class="banner-content">
-            <h3 class="heading">Nossos <span>Horários</span></h3>
-            <div class="table">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Serviço</th>
-                        <th>Segunda a Sexta</th>
-                        <th>Sábados</th>
-                        <th>Feriados</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Clínica geral</td>
-                        <td>08h - 19h</td>
-                        <td>08h - 14h</td>
-                        <td>08h - 14h</td>
-                    </tr>
-                    <tr>
-                        <td>Psicologia</td>
-                        <td>08h - 19h</td>
-                        <td>08h - 14h</td>
-                        <td>08h - 14h</td>
-                    </tr>
-                    <tr>
-                        <td>Pediatria</td>
-                        <td>08h - 19h</td>
-                        <td>08h - 18h</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>Oftalmologia</td>
-                        <td>08h - 19h</td>
-                        <td>08h - 18h</td>
-                        <td>-</td>
-                    </tr>
-                    </tbody>
-                </table>
+            <div class="column column-flex-center">
+                <h1 class="heading">Nossos <span>Horários</span></h1>
+                <div class="table column-flex-center">
+                    <table class="">
+                        <thead>
+                        <tr>
+                            <th>Serviço</th>
+                            <th>Segunda a Sexta</th>
+                            <th>Sábados</th>
+                            <th>Feriados</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Clínica geral</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Psicologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Pediatria</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 18h</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Oftalmologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 18h</td>
+                            <td>-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="#table-mobile" class="table-mobile">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th colspan="2">
+                                Clínica Geral
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Dias</th>
+                            <th>Horário</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Segunda a Sexta</td>
+                            <td>08h - 19h</td>
+                        </tr>
+                        <tr>
+                            <td>Sábados</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Feriados</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th colspan="2">
+                                Psicologia
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Dias</th>
+                            <th>Horário</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Segunda a Sexta</td>
+                            <td>08h - 19h</td>
+                        </tr>
+                        <tr>
+                            <td>Sábados</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Feriados</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th colspan="2">
+                                Pediatria
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Dias</th>
+                            <th>Horário</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Segunda a Sexta</td>
+                            <td>08h - 19h</td>
+                        </tr>
+                        <tr>
+                            <td>Sábados</td>
+                            <td>08h - 18h</td>
+                        </tr>
+                        <tr>
+                            <td>Feriados</td>
+                            <td> - </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th colspan="2">
+                                Oftalmologia
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Dias</th>
+                            <th>Horário</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Segunda a Sexta</td>
+                            <td>08h - 19h</td>
+                        </tr>
+                        <tr>
+                            <td>Sábados</td>
+                            <td>08h - 18h</td>
+                        </tr>
+                        <tr>
+                            <td>Feriados</td>
+                            <td> - </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div id="#table-mobile" class="table-mobile">
-                <table>
-                    <thead>
-                    <tr>
-                        <th colspan="2">
-                            Clínica Geral
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>Dias</th>
-                        <th>Horário</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Segunda a Sexta</td>
-                        <td>08h - 19h</td>
-                    </tr>
-                    <tr>
-                        <td>Sábados</td>
-                        <td>08h - 14h</td>
-                    </tr>
-                    <tr>
-                        <td>Feriados</td>
-                        <td>08h - 14h</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <table>
-                    <thead>
-                    <tr>
-                        <th colspan="2">
-                            Psicologia
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>Dias</th>
-                        <th>Horário</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Segunda a Sexta</td>
-                        <td>08h - 19h</td>
-                    </tr>
-                    <tr>
-                        <td>Sábados</td>
-                        <td>08h - 14h</td>
-                    </tr>
-                    <tr>
-                        <td>Feriados</td>
-                        <td>08h - 14h</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <table>
-                    <thead>
-                    <tr>
-                        <th colspan="2">
-                            Pediatria
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>Dias</th>
-                        <th>Horário</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Segunda a Sexta</td>
-                        <td>08h - 19h</td>
-                    </tr>
-                    <tr>
-                        <td>Sábados</td>
-                        <td>08h - 18h</td>
-                    </tr>
-                    <tr>
-                        <td>Feriados</td>
-                        <td> - </td>
-                    </tr>
-                    </tbody>
-                </table>
-                <table>
-                    <thead>
-                    <tr>
-                        <th colspan="2">
-                            Oftalmologia
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>Dias</th>
-                        <th>Horário</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Segunda a Sexta</td>
-                        <td>08h - 19h</td>
-                    </tr>
-                    <tr>
-                        <td>Sábados</td>
-                        <td>08h - 18h</td>
-                    </tr>
-                    <tr>
-                        <td>Feriados</td>
-                        <td> - </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-
         </div>
     </section>
+
     <!--
 
     Treatment Units
 
     -->
-    <section id="schedule">
-<!--        <h1 class="heading">Nosso <span>Horários</span></h1>-->
-        <div class="schedule-container">
-            <div class="row">
+    <section id="schedule" class="container">
+        <h1 class="heading"> <span>UTI's</span> & Internações </h1>
+        <div id="schedule-list">
+            <div class="column">
                 <h2>UNIDADES DE <span>INTERNAÇÃO CLÍNICAS E CIRÚRGICAS</span></h2>
-                <ul>
+                <ul class="column-flex-start">
                     <li><i class="fas fa-chevron-right"></i>Horário de visitação 16h às 18h.</li>
                     <li><i class="fas fa-chevron-right"></i>Troca de acompanhantes 07h às 22h.</li>
                     <li><i class="fas fa-chevron-right"></i>Permitida a presença de 02 visitantes por vez nos quartos dos pacientes internados.</li>
                     <li><i class="fas fa-chevron-right"></i>Todos os pacientes devem permanecer acompanhados por apenas 1 acompanhante.</li>
                 </ul>
             </div>
-            <div class="row">
+            <div class="column">
                 <h2>UNIDADES DE <span> TERAPIA INTENSIVA (UTI) - ADULTO </span></h2>
-                <ul>
+                <ul class="column-flex-start">
                     <li><i class="fas fa-chevron-right"></i>Horário de visita será acertado com o médico no momento do boletim.</li>
                     <li><i class="fas fa-chevron-right"></i>No painel terá a quantidade de visitantes e o horário das visitas.</li>
                 </ul>
             </div>
-            <div class="row">
+            <div class="column">
                 <h2>UNIDADES DE <span>TERAPIA INTENSIVA (UTI) - CRIANÇAS</span></h2>
-                <ul>
+                <ul class="column-flex-start">
                     <li><i class="fas fa-chevron-right"></i>Nas UTI’s neonatal e pediátricas, poderá haver 1 acompanhante, sendo um dos genitores.</li>
                     <li><i class="fas fa-chevron-right"></i>A visita do outro genitor poderá acontecer diariamente das 16h ás 17h.</li>
                     <li><i class="fas fa-chevron-right"></i>Às sextas-feiras, das 16:45h ás 17h a criança poderá receber a visita de um dos avós.</li>
@@ -256,91 +252,119 @@ Content
             </div>
         </div>
     </section>
+
     <!--
 
     Exams Schedules
 
     -->
-    <section id="exams">
-        <h2 class="heading">Exames & Consultas</h2>
-        <div class="exams-container">
-            <div class="exams-cards">
+    <section id="exams" class="container">
+        <h1 class="heading">Consultas & <span>Exames</span></h1>
+        <div class="cards-container">
+            <div class="cards column-flex-center">
                 <i class="fas fa-clipboard"></i>
-                <h2>
+                <h3>
                     Diagnóstico por Imagem
-                </h2>
-                <ul>
+                </h3>
+                <ul class="column-flex-start">
                     <li>
-                        <i class="fas fa-chevron-right"></i>
-                        De <b>segunda a quinta-feira:</b> 6h30min às 20h
+                        <p>
+                            <i class="fas fa-chevron-right"></i>
+                            De <b>segunda a quinta-feira:</b> 6h30min às 20h
+                        </p>
                     </li>
                     <li>
-                        <i class="fas fa-chevron-right"></i>
-                        Às <b>sextas-feiras:</b> 6h30min às 16h
+                        <p>
+                            <i class="fas fa-chevron-right"></i>
+                            Às <b>sextas-feiras:</b> 6h30min às 16h
+                        </p>
                     </li>
                     <li>
-                        <i class="fas fa-chevron-right"></i>
-                        Aos <b>Domingos:</b> 7h às 11h
+                        <p>
+                            <i class="fas fa-chevron-right"></i>
+                            Aos <b>Domingos:</b> 7h às 11h
+                        </p>
                     </li>
                 </ul>
             </div>
-            <div class="exams-cards">
+            <div class="cards column-flex-center">
                 <i class="fas fa-hospital"></i>
-                <h2>
+                <h3>
                     Consultórios
-                </h2>
-                <ul>
+                </h3>
+                <ul class="column-flex-start">
                     <li>
-                        <i class="fas fa-chevron-right"></i>
-                        De <b>segunda a quinta-feira:</b> 6h30min às 21h
+                        <p>
+                            <i class="fas fa-chevron-right"></i>
+                            Às <b>sextas-feiras:</b> 6h30min às 14h
+                        </p>
                     </li>
                     <li>
-                        <i class="fas fa-chevron-right"></i>
-                        Às <b>sextas-feiras:</b> 6h30min às 14h
+                        <p>
+                            <i class="fas fa-chevron-right"></i>
+                            De <b>segunda a quinta-feira:</b> 6h30min às 21h
+                        </p>
                     </li>
                     <li>
-                        <i class="fas fa-chevron-right"></i>
-                        Aos <b>Domingos:</b> Fechado
+                        <p>
+                            <i class="fas fa-chevron-right"></i>
+                            Aos <b>Domingos:</b> Fechado
+                        </p>
                     </li>
                 </ul>
             </div>
-            <div class="exams-cards">
+            <div class="cards column-flex-center">
                 <i class="fas fa-paste"></i>
-                <h2>
+                <h3>
                     Laboratório de Análises Clínicas
-                </h2>
-                <ul>
+                </h3>
+                <ul class="column-flex-start">
                     <li>
-                        <i class="fas fa-chevron-right"></i>
-                        De <b>segunda a quinta-feira:</b> 6h30min às 20h
+                        <p>
+                            <i class="fas fa-chevron-right"></i>
+                            De <b>segunda a quinta-feira:</b> 6h30min às 20h
+                        </p>
                     </li>
                     <li>
-                        <i class="fas fa-chevron-right"></i>
-                        Às <b>sextas-feiras:</b> 6h30min às 16h
+                        <p>
+                            <i class="fas fa-chevron-right"></i>
+                            Às <b>sextas-feiras:</b> 6h30min às 16h
+                        </p>
                     </li>
                     <li>
-                        <i class="fas fa-chevron-right"></i>
-                        Aos <b>Domingos:</b> 7h às 10h
+                        <p>
+                            <i class="fas fa-chevron-right"></i>
+                            Aos <b>Domingos:</b> 7h às 10h
+                        </p>
+
                     </li>
                 </ul>
             </div>
-            <div class="exams-cards">
+            <div class="cards column-flex-center">
                 <i class="fas fa-stethoscope"></i>
-                <h2>
+                <h3>
                     Garantia de saúde
-                </h2>
-                <ul>
+                </h3>
+                <ul class="column-flex-start">
                     <li>
-                        <i class="fas fa-chevron-right"></i>
-                        De <b>segunda a quinta-feira:</b> 7h às 18h
+                        <p>
+                            <i class="fas fa-chevron-right"></i>
+                            De <b>segunda a quinta-feira:</b> 7h às 18h
+                        </p>
+
                     </li>
                     <li>
-                        <i class="fas fa-chevron-right"></i>
-                        Às <b>sextas-feiras:</b> 7h às 13h
+                        <p>
+                            <i class="fas fa-chevron-right"></i>
+                            Às <b>sextas-feiras:</b> 7h às 13h
+                        </p>
+
                     </li>
                     <li>
-                        <i class="fas fa-chevron-right"></i>
-                        Aos <b>Domingos:</b> Fechado
+                        <p>
+                            <i class="fas fa-chevron-right"></i>
+                            Aos <b>Domingos:</b> Fechado
+                        </p>
                     </li>
                 </ul>
             </div>
