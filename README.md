@@ -83,7 +83,7 @@ Desafio está lançado! Com tudo que aprendemos neste Módulo é perfeitamente p
 
 ## Preview - 1440px
 
-[Live Demo](https://dio-formacao-html-developer.vercel.app/)
+[Live Demo](https://osmarbaia-medical-clinic.vercel.app/)
 
 ### Principal
 ![image](https://github.com/OsmarBaia/dio-formacao-html-developer/assets/88497805/25b95a13-cef8-4d3f-95b5-2c3e046016e8)
