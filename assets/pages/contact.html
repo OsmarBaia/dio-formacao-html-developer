@@ -52,60 +52,71 @@ Content
   Banner
 
   -->
-  <section id="banner" class="banner">
-    <picture class="image">
-      <source srcset="../images/contact.jpg" media="(min-width: 768px)">
-      <source srcset="../images/contact.jpg" media="(max-width: 767px)">
-      <!--TODO: Add alt description-->
-      <img src="../images/contact.jpg" alt=""/>
-    </picture>
+  <section id="banner" class="banner container">
+    <div class="row row-flex-center">
+      <picture class="column">
+        <source srcset="../images/contact.jpg" media="(min-width: 768px)">
+        <source srcset="../images/contact.jpg" media="(max-width: 767px)">
+        <!--TODO: Add alt description-->
+        <img src="../images/contact.jpg" alt=""/>
+      </picture>
+      <article class="column">
+        <h1 class="heading">Fale <span>Conosco</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aut dolores enim libero quia quisquam quo recusandae reiciendis vitae! Aliquid aspernatur blanditiis, eos excepturi incidunt molestiae quo rerum suscipit.</p>
+        <ul class="column-flex-start">
+          <li><i class="fa-brands fa-instagram"></i><a href="#">@medcare</a></li>
+          <li><i class="fa-brands fa-facebook"></i><a href="#">@medcare</a></li>
+          <li><i class="fa-brands fa-linkedin"></i><a href="#">@medcare</a></li>
+          <li><i class="fa-brands fa-whatsapp"></i><a href="#">+5591900000000</a></li>
+        </ul>
+      </article>
+    </div>
   </section>
   <!--
 
     Contact - Cards
 
     -->
-  <section class="contact-cards">
-    <h1 class="heading"> Fale <span>Conosco</span></h1>
-  <div class="container">
-    <div class="contact-card">
-      <h3> CENTRAL
+  <section class="contact-cards container">
+    <h1 class="heading"> Nossas <span>Centrais</span></h1>
+  <div class="cards-container">
+    <div class="cards column-flex-center">
+      <h3 class="heading"> CENTRAL
       </h3>
       <i class="fas fa-headset"></i>
-      <ul>
+      <ul class="column-flex-start">
         <li><i class="fas fa-chevron-right"></i> Telefone: <a href="tel:">91930000000</a></li>
         <li><i class="fas fa-chevron-right"></i> E-mail: <a href="mailto:">mecare@mail.com</a></li>
       </ul>
     </div>
-    <div class="contact-card">
-      <h3>
+    <div class="cards column-flex-center">
+      <h3 class="heading">
         EXAME OU CONSULTA
       </h3>
       <i class="fas fa-user-doctor"></i>
-      <ul>
+      <ul class="column-flex-start">
         <li><i class="fas fa-chevron-right"></i> Telefone: <a href="tel:">91930000000</a></li>
         <li><i class="fas fa-chevron-right"></i> E-mail: <a href="mailto:">mecare@mail.com</a></li>
       </ul>
     </div>
-    <div class="contact-card">
-      <h3>  COLETA LABORATORIAL
+    <div class="cards column-flex-center">
+      <h3 class="heading">  COLETA LABORATORIAL
       </h3>
       <i class="fas fa-flask-vial"></i>
-      <ul>
+      <ul class="column-flex-start">
         <li><i class="fas fa-chevron-right"></i> Telefone: <a href="tel:">91930000000</a></li>
         <li><i class="fas fa-chevron-right"></i> E-mail: <a href="mailto:">mecare@mail.com</a></li>
       </ul>
     </div>
-    <div class="contact-card">
-      <h3> AUTO ATENDIMENTO
+    <div class="cards column-flex-center">
+      <h3 class="heading"> AUTO ATENDIMENTO
       </h3>
       <i class="fas fa-mobile-screen-button"></i>
-      <ul>
+      <ul class="column-flex-start">
         <li><i class="fas fa-chevron-right"></i> Site: <a href="#">Agendamento Web</a></li>
         <li><i class="fas fa-chevron-right"></i> Android: <a href="#">Play Store</a></li>
         <li><i class="fas fa-chevron-right"></i> iPhone: <a href="#">Apple Store</a></li>
       </ul>
-
     </div>
   </div>
   </section>
@@ -114,24 +125,30 @@ Content
   Contact Form & Map
 
   -->
-  <section class="contact">
-    <!-- TODO: Add form validation-->
+
+  <section class="contact container" id="contact">
     <div class="row">
-      <form class="contact-form" action="" method="">
-        <h3>Contato</h3>
-        <label for="name">Nome: </label><input type="text" id="name" name="name" placeholder="João Silva" class="form-input">
-        <label for="number">Telefone: </label><input type="number" id="number" name="number" placeholder="(00) 00000-0000" class="form-input">
-        <label for="email">E-mail: </label><input type="email" id="email" name="email" placeholder="joaosilva@email.com" class="form-input">
-        <label for="message">Mensagem: </label><textarea name="message" id="message" class="message" placeholder="Duvidas, Sugestões, Agendamentos..."></textarea>
-        <input type="submit" id="submit" name="submit" value="Enviar" class="btn">
-      </form>
-      <div class="contact-address">
-        <h3>Endereço</h3>
-        <p>Avenida almirante barroso 0000, Belém-PA</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6893.219848380879!2d-48.46334270764635!3d-1.4360844360911815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48c7310e9f26f%3A0x4503d4deea772127!2sHospital%20Adventista%20de%20Bel%C3%A9m!5e0!3m2!1spt-BR!2sbr!4v1718577176716!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="row-flex-center">
+        <div class="column column-flex-center">
+          <h3 class="heading"> Mande uma <span>pergunta</span></h3>
+          <!--TODO: Form Validation-->
+          <form class="contact-form column-flex-start" action="" method="POST">
+            <label for="name">Nome: </label><input type="text" id="name" name="name" placeholder="João Silva" class="form-input">
+            <label for="number">Telefone: </label><input type="number" id="number" name="number" placeholder="(00) 00000-0000" class="form-input">
+            <label for="email">E-mail: </label><input type="email" id="email" name="email" placeholder="joaosilva@email.com" class="form-input">
+            <label for="message">Mensagem: </label><textarea name="message" id="message" class="message" placeholder="Duvidas, Sugestões, Agendamentos..."></textarea>
+            <button class="btn" type="submit" id="submit">Enviar</button>
+          </form>
+        </div>
+        <div class="column column-flex-center contact-address">
+          <h3 class="heading">Faça uma <span>visita</span></h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6893.219848380879!2d-48.46334270764635!3d-1.4360844360911815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48c7310e9f26f%3A0x4503d4deea772127!2sHospital%20Adventista%20de%20Bel%C3%A9m!5e0!3m2!1spt-BR!2sbr!4v1718577176716!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p><span>Endereço</span><br> Avenida almirante barroso 0000, Belém-PA</p>
+        </div>
       </div>
     </div>
   </section>
+
 </main>
 <!--
 

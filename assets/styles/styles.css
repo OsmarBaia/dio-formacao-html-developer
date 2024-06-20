@@ -399,9 +399,19 @@ article .heading{
 Contact
 
 */
-
 .contact .row{
     padding: 0;
+}
+
+.contact .row .row-flex-start{
+    gap: 3rem;
+    max-width: 1920px;
+}
+
+.contact .row .column{
+    flex: 1 1 45rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .contact form{
@@ -412,6 +422,18 @@ Contact
     padding: 2rem;
     border-radius: .5rem;
 }
+
+.contact .row .column form.contact-form{
+    min-width: 260px;
+    max-width: 500px;
+    width: 100%;
+    text-align: start;
+}
+
+.contact .row .column form.contact-form button{
+    text-align: center;
+}
+
 
 .container form.column-flex-start{
     gap: 1rem;
@@ -514,7 +536,17 @@ footer .column-flex-start{
 *               Media Queries
  * ----------------------------------------
 */
-@media (min-width: 1500px) {
+@media (min-width: 2171px ) {
+    .about-services .cards-container{
+        grid-template-columns: repeat(auto-fit,minmax(28rem, 1fr));
+    }
+}
+
+@media (min-width: 1501px) and (max-width: 2170px) {
+    .about-services .cards-container{
+        grid-template-columns: repeat(auto-fit,minmax(43rem, 1fr));
+    }
+
     .footer .footer-container{
         grid-template-columns: repeat(4, 1fr);
     }
@@ -606,7 +638,17 @@ footer .column-flex-start{
     }
 }
 
+@media (max-width: 526px){
+    h1.heading span{
+        display: block;
+    }
+}
+
 @media (max-width: 450px){
+    h1.heading{
+        font-size: 4rem;
+    }
+
     .about-services .cards-container{
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     }

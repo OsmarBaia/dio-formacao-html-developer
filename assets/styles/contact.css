@@ -1,116 +1,82 @@
 @import "styles.css";
 /*
 
+            Banner
+
+*/
+.banner article h1{
+    font-size: 5rem;
+}
+.banner article ul li{
+    font-size: 1.7rem;
+}
+
+.banner article ul li a, .banner article ul li a:visited{
+    color: var(--tertiary-text-color);
+}
+
+.banner article ul li:hover{
+    margin-left: 1rem;
+}
+
+/*
+
             Cards
 
 */
-.contact-cards{
-    padding-bottom: 5rem;
+.contact-cards .cards-container{
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)) ;
 }
 
-.contact-cards div.container{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 2rem;
+.contact-cards .cards{
+    min-height: 35rem;
+}
+.contact-cards .cards h3{
+    font-size: 3rem;
 }
 
-.contact-card{
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1.5rem;
-    border: var(--border);
-    box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-}
-
-.contact-card i {
-    color: var(--primary-text-color);
-    align-self: center;
-}
-
-.contact-card > i {
-    font-size: 4.5rem;
-}
-
-.contact-card ul{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 0;
-}
-
-.contact-card ul li{
+.contact-cards .cards ul li{
     color: var(--tertiary-text-color);
-    list-style: none;
-    font-size: 1.5rem;
 }
 
-.contact-card ul li i{
-    margin-right: .5rem;
-}
-.contact-card ul li a:link{
-   color: var(--primary-text-color);
-}
-
-.contact-card ul li a:visited{
+.contact-cards .cards ul li a, .contact-cards .cards ul li a:visited{
     color: var(--primary-text-color);
 }
 
-.contact-card ul li a:active {
-    color: var(--primary-text-color);
-}
-
-.contact-card h3{
-    align-self: center;
-    color: var(--secondary-text-color);
+.contact-cards .cards ul li, .contact-cards .cards ul li i,.contact-cards .cards ul li a{
     font-size: 1.7rem;
 }
+
 /*
 
-            Form
+            Form & Map
 
 */
-.contact .row{
-    display: flex;
-    gap: 2rem;
-}
 
-.contact .row div{
-    flex: 1 1 45%;
-}
-
-
-.contact .row .contact-address{
-   align-self: flex-start;
+.contact .row .column.contact-address{
+    min-width: 260px;
+    max-width: 600px;
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 3rem 0;
 }
 
-.contact .row .contact-address h3{
-    color: var(--secondary-text-color);
-    font-size: 2.5rem;
-}
-
-.contact .row .contact-address p{
+.contact .row .column.contact-address p{
     color: var(--tertiary-text-color);
     font-size: 1.7rem;
+    align-self: start;
+    margin-top: 2rem;
 }
 
-.contact .row .contact-address iframe{
+.contact .row .column.contact-address p span{
+    color: var(--primary-text-color);
+    font-weight: bold;
+}
+
+.contact .row .column.contact-address iframe{
     max-width: 100%;
     max-height: 100%;
-
-    width: auto;
-    height: 52.5rem;
+    width: 100%;
+    height: 42rem;
     border-radius: .5rem;
-
     border: var(--primary-text-color);
     box-shadow: var(--box-shadow);
 }
@@ -120,8 +86,37 @@
             Media Queries
 
 */
-@media (max-width: 600px) {
-    .contact-cards div.container{
-        grid-template-columns: repeat(2,1fr);
+
+@media (max-width: 1558px){
+    .contact-cards .cards-container{
+        grid-template-columns: repeat(auto-fit, minmax(43rem, 1fr)) ;
+    }
+
+    .contact .row .column.contact-address{
+        padding-top: 2.5rem;
+    }
+    .contact .row .column.contact-address iframe{
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 1242px){
+    .contact-cards .cards-container{
+        grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr)) ;
+    }
+    .contact .row .column.contact-address{
+        padding-top: 0;
+    }
+    .contact .row .column.contact-address iframe{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact-cards .cards-container{
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)) ;
+    }
+    .contact .row .column{
+        flex: 1 1 30rem;
     }
 }

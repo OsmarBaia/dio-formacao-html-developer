@@ -116,47 +116,47 @@ Content
     <section class="container about-services" id="about-services">
         <h1 class="heading"> Nossos <span>Serviços</span> </h1>
         <article class="cards-container">
-            <section class="cards column-flex-start">
+            <div class="cards column-flex-start">
                 <i class="fas fa-notes-medical"></i>
                 <h3 class="heading">Check-up</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
                 <a href="./assets/pages/about.html" class="btn"> Saiba mais <span class="fas fa-chevron-right"></span> </a>
-            </section>
+            </div>
 
-            <section class="cards column-flex-start">
+            <div class="cards column-flex-start">
                 <i class="fas fa-ambulance"></i>
                 <h3 class="heading">Emergência 24/7</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
                 <a href="./assets/pages/about.html" class="btn"> Saiba mais <span class="fas fa-chevron-right"></span> </a>
-            </section>
+            </div>
 
-            <section class="cards column-flex-start">
+            <div class="cards column-flex-start">
                 <i class="fas fa-laptop-medical"></i>
                 <h3 class="heading">Telemedicina</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
                 <a href="./assets/pages/about.html" class="btn"> Saiba mais <span class="fas fa-chevron-right"></span> </a>
-            </section>
+            </div>
 
-            <section class="cards column-flex-start">
+            <div class="cards column-flex-start">
                 <i class="fas fa-pills"></i>
                 <h3 class="heading">Ambulatórios</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
                 <a href="./assets/pages/about.html" class="btn"> Saiba mais <span class="fas fa-chevron-right"></span> </a>
-            </section>
+            </div>
 
-            <section class="cards column-flex-start">
+            <div class="cards column-flex-start">
                 <i class="fas fa-procedures"></i>
                 <h3 class="heading">Internação</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
                 <a href="./assets/pages/about.html" class="btn"> Saiba mais <span class="fas fa-chevron-right"></span> </a>
-            </section>
+            </div>
 
-            <section class="cards column-flex-start">
+            <div class="cards column-flex-start">
                 <i class="fas fa-house-medical"></i>
                 <h3 class="heading">atendimento domiciliar</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
                 <a href="./assets/pages/about.html" class="btn"> Saiba mais <span class="fas fa-chevron-right"></span> </a>
-            </section>
+            </div>
         </article>
     </section>
 
@@ -189,17 +189,19 @@ Content
         <h1 class="heading"> Fale <span>Conosco</span></h1>
         <div class="row">
             <div class="row-flex-center">
-                <picture class="">
+                <picture class="column column-flex-center">
                     <img src="./assets/images/contact.jpg" alt="">
                 </picture>
-                <!-- TODO: Add form validation-->
-                <form class="column-flex-start" action="" method="">
-                    <label for="name">Nome: </label><input type="text" id="name" name="name" placeholder="João Silva" class="form-input">
-                    <label for="number">Telefone: </label><input type="number" id="number" name="number" placeholder="(00) 00000-0000" class="form-input">
-                    <label for="email">E-mail: </label><input type="email" id="email" name="email" placeholder="joaosilva@email.com" class="form-input">
-                    <label for="message">Mensagem: </label><textarea name="message" id="message" class="message" placeholder="Duvidas, Sugestões, Agendamentos..."></textarea>
-                    <input type="submit" id="submit" name="submit" value="Enviar" class="btn">
-                </form>
+                <div class="column column-flex-center">
+                    <!--TODO: Form Validation-->
+                    <form class="contact-form column-flex-start" action="" method="POST">
+                        <label for="name">Nome: </label><input type="text" id="name" name="name" placeholder="João Silva" class="form-input">
+                        <label for="number">Telefone: </label><input type="number" id="number" name="number" placeholder="(00) 00000-0000" class="form-input">
+                        <label for="email">E-mail: </label><input type="email" id="email" name="email" placeholder="joaosilva@email.com" class="form-input">
+                        <label for="message">Mensagem: </label><textarea name="message" id="message" class="message" placeholder="Duvidas, Sugestões, Agendamentos..."></textarea>
+                        <button class="btn" type="submit" id="submit">Enviar</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
