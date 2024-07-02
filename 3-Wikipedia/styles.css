@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+body{
+    width: 100wh;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: auto;
+}
+
+li{
+    list-style: none;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* 
+
+            Headers
+
+*/
+header .container{
+    display: relative;
+}
+
+header .content{
+    padding: .5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-logo-box{
+    display: flex;
+    gap: 1.5rem;
+}
+
+header form{
+    display: flex;
+}
+
+header form input{
+    border: 1px solid gray;
+    height: 100%;
+    width: auto;
+    padding: .25rem;
+}
+
+header form button{
+    border-radius: 0;
+    border: 1px solid gray;
+    padding: .25rem;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+header li{
+    display: inline-block;
+}
+
+
+/* 
+
+        NavMenu
+
+*/
+#nav-menu-btn{
+    width: 42px;
+    height: 42px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#nav-menu-btn i {
+    font-size: 24px;
+}
+
+#nav-menu{
+    display: none;
+}
+
+#nav-menu.active{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    position: fixed;
+    width: 100%;
+    max-width: 320px;
+    top: 5rem;
+    left: 0;
+    padding-left: 1.5rem;
+
+    
+}
+#nav-menu ul{
+    flex-direction: column;
+}
+
+#colab-menu{
+    display: none;
+}
+
+#colab-menu.active{
+    display: block;
+}
