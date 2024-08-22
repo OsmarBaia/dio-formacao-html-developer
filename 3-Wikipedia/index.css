@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  width: 100wh;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+aside,
+main {
+  height: 100%vw;
+  border: 1px solid gray;
+  max-width: 100%;
+  min-width: 200px;
+  padding: 1rem;
+}
+
+/* 
+  
+              Headers
+  
+  */
+header .container {
+  display: relative;
+}
+
+header .content {
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-logo-box {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header form {
+  display: flex;
+}
+
+header form input {
+  border: 1px solid gray;
+  height: 100%;
+  width: auto;
+  padding: 0.25rem;
+}
+
+header form button {
+  border-radius: 0;
+  border: 1px solid gray;
+  padding: 0.25rem;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+header li {
+  display: inline-block;
+}
+
+/* 
+  
+          NavMenu
+  
+  */
+
+#nav-menu-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#nav-menu-btn i {
+  font-size: 20px;
+}
+
+#nav-menu {
+  display: none;
+}
+
+#nav-menu.active {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  position: fixed;
+  width: 100%;
+  max-width: 320px;
+  top: 5rem;
+  left: 0;
+  padding-left: 1.5rem;
+}
+#nav-menu ul {
+  flex-direction: column;
+}
+
+#colab-menu {
+  display: none;
+}
+
+#colab-menu.active {
+  display: block;
+}
+
+/* 
+  
+          NavBar Logo
+  
+  */
+
+#nav-logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: auto;
+}
+
+#nav-logo-box img {
+  height: 100%;
+  width: auto;
+}
+#nav-logo-box div {
+  display: flex;
+  flex-direction: column;
+  padding: 0.4rem;
+}
+#nav-logo-box h1 {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+#nav-logo-box h1 span {
+  font-size: 1.75rem;
+}
+
+#nav-logo-box p {
+  text-align: justify;
+}
+
+/* Article Wiki */
+#article-wiki {
+  justify-content: space-between;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  height: auto;
+}

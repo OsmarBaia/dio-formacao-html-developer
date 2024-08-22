@@ -1,131 +1,151 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-body{
-    width: 100wh;
-    height: 100vh;
+header {
+  width: 100%;
+  /* max-width: 1200px; */
+  height: auto;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header{
-    width: 100%;
-    height: auto;
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 1rem;
+  padding: 1rem 0;
 }
 
-li{
-    list-style: none;
+.navbar__left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  order: 1;
 }
 
-
-.container{
-    width: 100%;
-    max-width: 1200px;
-    height: 100%;
+.navbar__left button {
+  width: 2.75rem;
+  height: 2.75rem;
+  background-color: transparent;
+  border: none;
 }
 
-.content{
-    display: flex;
-    flex-direction: row;
+.navbar__left button:active {
+  background-color: #ccc;
+  border: 1px solid black;
 }
 
-
-
-/* 
-
-            Headers
-
-*/
-header .container{
-    display: relative;
+.navbar__left .menu-icon {
+  font-size: 20px;
+  cursor: pointer;
 }
 
-header .content{
-    padding: .5rem 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navbar__left a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
-#nav-logo-box{
-    display: flex;
-    gap: 1.5rem;
+.navbar__left a span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
-header form{
-    display: flex;
+.navbar__left a img {
+  height: 3.125rem;
+  width: auto;
+  margin-right: 0.5rem;
 }
 
-header form input{
-    border: 1px solid gray;
-    height: 100%;
-    width: auto;
-    padding: .25rem;
+.navbar__center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 0.8rem;
+  order: 3;
 }
 
-header form button{
-    border-radius: 0;
-    border: 1px solid gray;
-    padding: .25rem;
+.navbar__center input[type="search"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
-header ul{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    padding: 0 1rem;
+.navbar__center button {
+  width: 44px;
+  height: 44px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-header li{
-    display: inline-block;
+.navbar__center button span {
+  display: none;
 }
 
-
-/* 
-
-        NavMenu
-
-*/
-#nav-menu-btn{
-    width: 42px;
-    height: 42px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+.navbar__center button i {
+  display: block;
+  font-size: 20px;
 }
 
-#nav-menu-btn i {
-    font-size: 24px;
+.navbar__right {
+  display: flex;
+  align-items: center;
+  order: 2;
 }
 
-#nav-menu{
-    display: none;
+.navbar__right .icon-group {
+  display: flex;
+  align-items: center;
 }
 
-#nav-menu.active{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    position: fixed;
-    width: 100%;
-    max-width: 320px;
-    top: 5rem;
-    left: 0;
-    padding-left: 1.5rem;
-
-    
-}
-#nav-menu ul{
-    flex-direction: column;
+.navbar__right .icon-group a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-#colab-menu{
-    display: none;
+.navbar__right .more-options {
+  font-size: 24px;
+  margin-right: 1rem;
+  cursor: pointer;
 }
 
-#colab-menu.active{
-    display: block;
+@media (min-width: 600px) {
+  .navbar {
+    flex-wrap: nowrap;
+  }
+  .navbar__left {
+    order: 1;
+  }
+  .navbar__center {
+    order: 2;
+  }
+  .navbar__right {
+    order: 3;
+  }
 }
