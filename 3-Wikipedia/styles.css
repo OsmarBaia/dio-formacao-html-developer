@@ -15,10 +15,10 @@ body {
 
 header {
   width: 100%;
-  /* max-width: 1200px; */
   height: auto;
   background-color: #f8f8f8;
   border-bottom: 1px solid #ccc;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,6 +135,57 @@ header {
   cursor: pointer;
 }
 
+#article-container {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#article-container aside,
+#article-container main {
+  padding: 1rem;
+  height: auto;
+}
+
+#article-container aside {
+  max-width: 320px;
+  width: 100%;
+}
+
+#article-aside-links {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+#article-aside-links-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+footer {
+  height: 1.5rem;
+  width: 100%;
+  text-align: center;
+  font-size: large;
+  font-weight: thin;
+  color: #ccc;
+
+  padding: 2rem;
+}
+
 @media (min-width: 600px) {
   .navbar {
     flex-wrap: nowrap;
@@ -147,5 +198,14 @@ header {
   }
   .navbar__right {
     order: 3;
+  }
+
+  #article-container {
+    flex-direction: row;
+  }
+
+  #article-aside-links-container {
+    flex-direction: row;
+    align-items: center;
   }
 }

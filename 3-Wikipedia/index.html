@@ -1,303 +1,271 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./styles.css" />
     <script src="main.js" defer></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style></style>
 
     <title>Wikipedia - Clone</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <nav class="navbar">
-        <div class="navbar__left">
-          <button id="navbar__menu-btn">
-            <i class="fas fa-bars menu-icon"></i>
-          </button>
-          <a href="#" class="nav__logo">
-            <img
-              class="logo__icon"
-              src="https://pt.wikipedia.org/static/images/icons/wikipedia.png"
-              alt="Wikipédia Icon"
-              aria-hidden="true"
-            />
-            <span class="">
-              <img
-                class="logo__wordmark"
-                alt="Wikipédia Logo"
-                src="https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg"
-                style="width: 7.4375em; height: 1.125em"
-              />
-              <img
-                class="logo__slogan"
-                alt="Wikipédia Slogan"
-                src="https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-tagline-pt.svg"
-                width="120"
-                height="13"
-                style="width: 7.5em; height: 0.8125em"
-              />
-            </span>
-          </a>
-        </div>
-        <div class="navbar__center">
-          <input type="search" placeholder="Pesquisar na Wikipédia" />
-          <button id="search-btn">
-            <span>Pesquisar</span>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
+        <nav class="navbar" role="navigation" aria-label="Barra de principal de navageção">
+            <div class="navbar__left">
+                <button id="navbar__menu-btn" role="button" aria-label="Abrir menu de navegação do site"
+                    aria-expanded="false">
+                    <i class="fas fa-bars menu-icon"></i>
+                </button>
+                <a href="#" class="nav__logo">
+                    <img class="logo__icon" src="https://pt.wikipedia.org/static/images/icons/wikipedia.png"
+                        alt="Wikipédia Icon" aria-hidden="true" />
+                    <span class="">
+                        <img class="logo__wordmark" alt="Wikipédia Logo"
+                            src="https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg"
+                            style="width: 7.4375em; height: 1.125em" />
+                        <img class="logo__slogan" alt="Wikipédia Slogan"
+                            src="https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-tagline-pt.svg"
+                            width="120" height="13" style="width: 7.5em; height: 0.8125em" />
+                    </span>
+                </a>
+            </div>
+            <div class="navbar__center">
+                <input type="search" role="search" placeholder="Pesquisar na Wikipédia" />
+                <button id="search-btn" role="button" aria-label="Pesquisar">
+                    <span>Pesquisar</span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
 
-        <div class="navbar__right">
-          <i class="fas fa-ellipsis-h more-options"></i>
-        </div>
-      </nav>
-      <!-- Submenu de Usuário -->
-      <!-- Submenu de Conteúdo -->
+            <div class="navbar__right">
+                <button role="button" aria-label="Abrir menu de Usuário">
+                    <i class="fas fa-ellipsis-h more-options"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Submenu de Usuário -->
+        <!-- Submenu de Conteúdo -->
     </header>
 
-    <div class="container">
-      <div id="article-wiki" class="content">
+    <div id="article-container">
         <aside id="article-anchors">
-          <h2>Conteúdo</h2>
-          <hr />
-          <nav id="article-nav">
-            <ul class="article-navlist">
-              <li class="article-navitem">
-                <a class="article-navlink" href="article-intro">Introdução</a>
-              </li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </nav>
+            <h2>Conteúdo</h2>
+            <hr />
+            <nav id="article-nav" role="navigation" aria-label="Navegação do artigo">
+                <ul class="article-navlist" role="menu">
+                    <li class="article-navitem" role="menuitem">
+                        <a class="article-navlink" href="article-intro" aria-label="Introdução">Introdução</a>
+                    </li>
+                    <li class="article-navitem" role="menuitem">
+                        <a class="article-navlink" href="article-intro" aria-label="Jogabilidade">Jogabilidade</a>
+                    </li>
+                    <li class="article-navitem" role="menuitem" aria-haspopup="true">
+                        <a class="article-navlink" href="article-intro" aria-label="Contexto">Contexto</a>
+                        <ul role="menu">
+                            <li role="menuitem">Cenário</li>
+                            <li role="menuitem">História</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </aside>
         <main>
-          <article>
-            <h1 class="article-title">Final Fantasy Tactics</h1>
-            <section id="article-intro" class="article-topic">
-              <h2 class="article-topic">Introdução</h2>
-              <p class="article-paragraph">
-                Final Fantasy Tactics[a] is a 1997 tactical role-playing game
-                developed and published by Square for the PlayStation video game
-                console. Released in Japan in June 1997 and in the United States
-                in January 1998 by Sony Computer Entertainment, it is the first
-                game of the Tactics series within the Final Fantasy franchise,
-                and the first entry set in the fictional world later known as
-                Ivalice. The story follows Ramza Beoulve, a highborn cadet
-                placed in the middle of a military conflict known as The Lion
-                War, where two opposing noble factions are coveting the throne
-                of the kingdom.
-              </p>
-            </section>
-            <section id="" class="article-topic">
-              <h2 class="article-topic">Game Play</h2>
-              <p class="article-paragraph">
-                Final Fantasy Tactics is a tactical role-playing game in which
-                players follow the story of protagonist Ramza Beoulve.[1] The
-                game features two modes of play: battles and the world map.[2]
-                Battles take place on three-dimensional, isometric fields.[1]
-                Characters move on a battlefield composed of square tiles;
-                movement and action ranges are determined by the character's
-                statistics and job class.[3] The battlefield also factors in
-                elements such as terrain and weather to determine strategic
-                advantages and disadvantages during clashes.[4] Battles are
-                turn-based; a unit may act when its Charge Time (CT) reaches 100
-                and increased once every CT unit (a measure of time in battles)
-                by an amount equal to the unit's speed statistic.[5] During
-                battle, whenever a unit performs an action successfully, it
-                gains experience points (EXP) and job points (JP).[1] Actions
-                can include magical attacks, physical attacks, or using an
-                item.[5][6] Hit points (HP) of enemy units are also visible to
-                the player (except in the case of certain bosses), allowing the
-                player to know how much damage they still have to inflict on a
-                particular unit.[7]
-              </p>
-            </section>
-            <section id="" class="article-topic">
-              <h2>Plot</h2>
-              <p class="article-paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                dolore voluptate dolor esse ratione ut nulla quis sed autem
-                cupiditate nihil ad dicta optio, veniam culpa? Totam laudantium
-                facere ipsam.
-              </p>
-              <section id="" class="article-subtopic">
-                <h3>Plot Summary</h3>
-                <p class="article-paragraph">
-                  The story takes place in the kingdom of Ivalice, inspired by
-                  the Middle Ages.[6][12] The kingdom is located in a peninsula
-                  surrounded by sea on the north, west and south, with a
-                  headland south of the landmass. It is heavily populated by
-                  human beings, although intelligent monsters can be found
-                  living in less populated areas. Magic is predominant in the
-                  land, although ruins and artifacts indicated that the past
-                  populace had relied on machinery, such as airships and robots.
-                  Ivalice's neighbors are the kingdom of Ordalia in the east and
-                  Romanda, a military nation to the north. While the three
-                  nations share common royal bloodlines, major wars have taken
-                  place between them. An influential religious institution known
-                  as the Glabados Church heads the dominant faith, centering
-                  around a religious figure known as Saint Ajora.
-                </p>
-              </section>
-              <section id="" class="article-subtopic">
-                <h3>Plot Summary</h3>
-                <p class="article-paragraph">
-                  Ivalice is recovering from the Fifty Year War against Ordalia.
-                  After the death of its ruler, Princess Ovelia and Prince
-                  Orinas are both candidates for the throne. The former is
-                  supported by Prince Goltana of the Black Lion, and the latter
-                  by Queen Ruvelia and her brother, Prince Larg of the White
-                  Lion. The two groups engage in battles in the Lion War.
-                </p>
-                <p class="article-paragraph">
-                  Nobles and commoners regard each other negatively and many
-                  commoners joined the Corpse Brigade to fight against the
-                  nobles' soldiers. Ramza, part of the noble Beoulve family of
-                  knights, and Delita, his childhood friend who was an ordinary
-                  commoner, witness the murder of Delita's sister during an
-                  uprising. This causes Delita and Ramza to abandon their ties
-                  to the nobility. Ramza joins a mercenary group, led by
-                  Gafgarion, who protects Princess Ovelia from being hunted by
-                  both sides of the Lion War. Delita joins Goltana's forces.
-                  They are reunited when Gafgarion attempts to take Ovelia to
-                  Prince Larg. Agrias suggests visiting Cardinal Delacroix of
-                  the Glabados Church to protect Ovelia. Along the way, Ramza
-                  meets Mustadio, a machinist in possession of a holy relic
-                  called the Zodiac Stone. Hunted by a trading company for the
-                  power it contains, Mustadio also seeks Delacroix's
-                  intervention.
-                </p>
-                <p class="article-paragraph">
-                  Ramza discovers that High Confessor Marcel Funebris and the
-                  church used the legend of the holy Zodiac Braves to gather the
-                  Zodiac Stones and instigated the Lion War. To prevent Ramza's
-                  interference, Delacroix uses the stone to transform into a
-                  Lucavi demon and Ramza defeats him. Ramza is regarded as a
-                  heretic by the church and he is chased by the Knights Templar,
-                  the soldiers of the church who are hunting the Zodiac Stones.
-                  He acquires proof of the Church's lies about Saint Ajora, a
-                  central figure in the religion, and attempts to use it along
-                  with the Zodiac Stone to reveal the organization's plot.
-                </p>
-              </section>
-            </section>
-          </article>
+            <article>
+                <h1 class="article-title">Final Fantasy Tactics</h1>
+                <section id="article-intro" class="article-topic">
+                    <h2 class="article-topic">Introdução</h2>
+                    <p class="article-paragraph">
+                        Final Fantasy Tactics[a] is a 1997 tactical role-playing game
+                        developed and published by Square for the PlayStation video game
+                        console. Released in Japan in June 1997 and in the United States
+                        in January 1998 by Sony Computer Entertainment, it is the first
+                        game of the Tactics series within the Final Fantasy franchise, and
+                        the first entry set in the fictional world later known as Ivalice.
+                        The story follows Ramza Beoulve, a highborn cadet placed in the
+                        middle of a military conflict known as The Lion War, where two
+                        opposing noble factions are coveting the throne of the kingdom.
+                    </p>
+                </section>
+                <section id="" class="article-topic">
+                    <h2 class="article-topic">Game Play</h2>
+                    <p class="article-paragraph">
+                        Final Fantasy Tactics is a tactical role-playing game in which
+                        players follow the story of protagonist Ramza Beoulve.[1] The game
+                        features two modes of play: battles and the world map.[2] Battles
+                        take place on three-dimensional, isometric fields.[1] Characters
+                        move on a battlefield composed of square tiles; movement and
+                        action ranges are determined by the character's statistics and job
+                        class.[3] The battlefield also factors in elements such as terrain
+                        and weather to determine strategic advantages and disadvantages
+                        during clashes.[4] Battles are turn-based; a unit may act when its
+                        Charge Time (CT) reaches 100 and increased once every CT unit (a
+                        measure of time in battles) by an amount equal to the unit's speed
+                        statistic.[5] During battle, whenever a unit performs an action
+                        successfully, it gains experience points (EXP) and job points
+                        (JP).[1] Actions can include magical attacks, physical attacks, or
+                        using an item.[5][6] Hit points (HP) of enemy units are also
+                        visible to the player (except in the case of certain bosses),
+                        allowing the player to know how much damage they still have to
+                        inflict on a particular unit.[7]
+                    </p>
+                </section>
+                <section id="" class="article-topic">
+                    <h2>Plot</h2>
+                    <p class="article-paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolore
+                        voluptate dolor esse ratione ut nulla quis sed autem cupiditate
+                        nihil ad dicta optio, veniam culpa? Totam laudantium facere ipsam.
+                    </p>
+                    <section id="" class="article-subtopic">
+                        <h3>Plot Summary</h3>
+                        <p class="article-paragraph">
+                            The story takes place in the kingdom of Ivalice, inspired by the
+                            Middle Ages.[6][12] The kingdom is located in a peninsula
+                            surrounded by sea on the north, west and south, with a headland
+                            south of the landmass. It is heavily populated by human beings,
+                            although intelligent monsters can be found living in less
+                            populated areas. Magic is predominant in the land, although
+                            ruins and artifacts indicated that the past populace had relied
+                            on machinery, such as airships and robots. Ivalice's neighbors
+                            are the kingdom of Ordalia in the east and Romanda, a military
+                            nation to the north. While the three nations share common royal
+                            bloodlines, major wars have taken place between them. An
+                            influential religious institution known as the Glabados Church
+                            heads the dominant faith, centering around a religious figure
+                            known as Saint Ajora.
+                        </p>
+                    </section>
+                    <section id="" class="article-subtopic">
+                        <h3>Plot Summary</h3>
+                        <p class="article-paragraph">
+                            Ivalice is recovering from the Fifty Year War against Ordalia.
+                            After the death of its ruler, Princess Ovelia and Prince Orinas
+                            are both candidates for the throne. The former is supported by
+                            Prince Goltana of the Black Lion, and the latter by Queen
+                            Ruvelia and her brother, Prince Larg of the White Lion. The two
+                            groups engage in battles in the Lion War.
+                        </p>
+                        <p class="article-paragraph">
+                            Nobles and commoners regard each other negatively and many
+                            commoners joined the Corpse Brigade to fight against the nobles'
+                            soldiers. Ramza, part of the noble Beoulve family of knights,
+                            and Delita, his childhood friend who was an ordinary commoner,
+                            witness the murder of Delita's sister during an uprising. This
+                            causes Delita and Ramza to abandon their ties to the nobility.
+                            Ramza joins a mercenary group, led by Gafgarion, who protects
+                            Princess Ovelia from being hunted by both sides of the Lion War.
+                            Delita joins Goltana's forces. They are reunited when Gafgarion
+                            attempts to take Ovelia to Prince Larg. Agrias suggests visiting
+                            Cardinal Delacroix of the Glabados Church to protect Ovelia.
+                            Along the way, Ramza meets Mustadio, a machinist in possession
+                            of a holy relic called the Zodiac Stone. Hunted by a trading
+                            company for the power it contains, Mustadio also seeks
+                            Delacroix's intervention.
+                        </p>
+                        <p class="article-paragraph">
+                            Ramza discovers that High Confessor Marcel Funebris and the
+                            church used the legend of the holy Zodiac Braves to gather the
+                            Zodiac Stones and instigated the Lion War. To prevent Ramza's
+                            interference, Delacroix uses the stone to transform into a
+                            Lucavi demon and Ramza defeats him. Ramza is regarded as a
+                            heretic by the church and he is chased by the Knights Templar,
+                            the soldiers of the church who are hunting the Zodiac Stones. He
+                            acquires proof of the Church's lies about Saint Ajora, a central
+                            figure in the religion, and attempts to use it along with the
+                            Zodiac Stone to reveal the organization's plot.
+                        </p>
+                    </section>
+                </section>
+            </article>
         </main>
         <aside id="article-aside">
-          <section id="article-aside-content">
-            <div class="article-title">
-              <h1>Final Fantasy Tactics</h1>
-            </div>
-            <div class="game-image">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Final_Fantasy_Tactics.jpg/220px-Final_Fantasy_Tactics.jpg"
-                alt="Final Fantasy Tactics Cover"
-              />
-            </div>
-            <div class="game-details">
-              <p><strong>Developer(s):</strong> Square</p>
-              <p>
-                <strong>Publisher(s):</strong> JP: Square<br />NA: Sony Computer
-                Entertainment
-              </p>
-              <p><strong>Director(s):</strong> Yasumi Matsuno</p>
-              <p><strong>Producer(s):</strong> Hironobu Sakaguchi</p>
-              <p><strong>Designer(s):</strong> Hiroyuki Ito</p>
-              <p><strong>Programmer(s):</strong> Taku Murata</p>
-              <p>
-                <strong>Artist(s):</strong> Hiroshi Minagawa, Akihiko Yoshida,
-                Hideo Minaba
-              </p>
-              <p><strong>Writer(s):</strong> Yasumi Matsuno</p>
-              <p>
-                <strong>Composer(s):</strong> Hitoshi Sakimoto, Masaharu Iwata
-              </p>
-              <p><strong>Series:</strong> Final Fantasy, Ivalice Alliance</p>
-              <p><strong>Platform(s):</strong> PlayStation</p>
-              <p>
-                <strong>Release:</strong> JP: June 20, 1997<br />NA: January 28,
-                1998
-              </p>
-              <p><strong>Genre(s):</strong> Tactical role-playing</p>
-              <p><strong>Mode(s):</strong> Single-player</p>
-            </div>
-          </section>
-          <section id="article-aside-links">
-            <div id="article-aside-links-container">
-              <div class="article-aside-content">
+            <section id="article-aside-content">
+                <div class="article-title">
+                    <h1>Final Fantasy Tactics</h1>
+                </div>
+                <div class="game-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Final_Fantasy_Tactics.jpg/220px-Final_Fantasy_Tactics.jpg"
+                        alt="Final Fantasy Tactics Cover" />
+                </div>
+                <div class="game-details">
+                    <p><strong>Developer(s):</strong> Square</p>
+                    <p>
+                        <strong>Publisher(s):</strong> JP: Square<br />NA: Sony Computer
+                        Entertainment
+                    </p>
+                    <p><strong>Director(s):</strong> Yasumi Matsuno</p>
+                    <p><strong>Producer(s):</strong> Hironobu Sakaguchi</p>
+                    <p><strong>Designer(s):</strong> Hiroyuki Ito</p>
+                    <p><strong>Programmer(s):</strong> Taku Murata</p>
+                    <p>
+                        <strong>Artist(s):</strong> Hiroshi Minagawa, Akihiko Yoshida,
+                        Hideo Minaba
+                    </p>
+                    <p><strong>Writer(s):</strong> Yasumi Matsuno</p>
+                    <p>
+                        <strong>Composer(s):</strong> Hitoshi Sakimoto, Masaharu Iwata
+                    </p>
+                    <p><strong>Series:</strong> Final Fantasy, Ivalice Alliance</p>
+                    <p><strong>Platform(s):</strong> PlayStation</p>
+                    <p>
+                        <strong>Release:</strong> JP: June 20, 1997<br />NA: January 28,
+                        1998
+                    </p>
+                    <p><strong>Genre(s):</strong> Tactical role-playing</p>
+                    <p><strong>Mode(s):</strong> Single-player</p>
+                </div>
+            </section>
+        </aside>
+    </div>
+    <aside id="article-aside-links">
+        <div id="article-aside-links-container">
+            <div class="article-aside-content">
                 <figure>
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Final_Fantasy_Tactics.jpg/220px-Final_Fantasy_Tactics.jpg"
-                    alt="Final Fantasy Tactics Cover"
-                  />
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Final_Fantasy_Tactics.jpg/220px-Final_Fantasy_Tactics.jpg"
+                        alt="Final Fantasy Tactics Cover" />
                 </figure>
                 <h4>Final Fantasy 7</h4>
                 <button>
-                  <a
-                    href="https://www.playstation.com/en-us/games/final-fantasy-tactics/"
-                    >Play Now</a
-                  >
+                    <a href="https://www.playstation.com/en-us/games/final-fantasy-tactics/">Read More</a>
                 </button>
-              </div>
-              <div class="article-aside-content">
+            </div>
+            <div class="article-aside-content">
                 <figure>
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Final_Fantasy_Tactics.jpg/220px-Final_Fantasy_Tactics.jpg"
-                    alt="Final Fantasy Tactics Cover"
-                  />
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Final_Fantasy_Tactics.jpg/220px-Final_Fantasy_Tactics.jpg"
+                        alt="Final Fantasy Tactics Cover" />
                 </figure>
                 <h4>Final Fantasy 9</h4>
                 <button>
-                  <a
-                    href="https://www.playstation.com/en-us/games/final-fantasy-tactics/"
-                    >Play Now</a
-                  >
+                    <a href="https://www.playstation.com/en-us/games/final-fantasy-tactics/">Read More</a>
                 </button>
-                <div class="article-aside-content">
-                  <figure>
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Final_Fantasy_Tactics.jpg/220px-Final_Fantasy_Tactics.jpg"
-                      alt="Final Fantasy Tactics Cover"
-                    />
-                  </figure>
-                  <h4>Final Fantasy X-2</h4>
-                  <button>
-                    <a
-                      href="https://www.playstation.com/en-us/games/final-fantasy-tactics/"
-                      >Play Now</a
-                    >
-                  </button>
-                </div>
-              </div>
             </div>
-          </section>
-        </aside>
-      </div>
-    </div>
-    <footer class="container">
-      <div class="content">
-        <p>OsmarBaia@2024</p>
-      </div>
+            <div class="article-aside-content">
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Final_Fantasy_Tactics.jpg/220px-Final_Fantasy_Tactics.jpg"
+                        alt="Final Fantasy Tactics Cover" />
+                </figure>
+                <h4>Final Fantasy X-2</h4>
+                <button>
+                    <a href="https://www.playstation.com/en-us/games/final-fantasy-tactics/">Read More</a>
+                </button>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <section>
+            <p>OsmarBaia@2024</p>
+        </section>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>
