@@ -78,6 +78,16 @@ header {
   margin-right: 0.5rem;
 }
 
+.navbar__left a img.logo__wordmark {
+  width: 7.4375em;
+  height: 1.125em;
+}
+
+.navbar__left a img.logo__slogan {
+  width: 7.4375em;
+  height: 0.8125em;
+}
+
 .navbar__center {
   width: 100%;
   display: flex;
@@ -208,6 +218,10 @@ main article h1 {
 }
 
 .article-subtopic h3 {
+  padding: 0.5rem 0;
+}
+
+.article-paragraph {
   padding: 0.5rem 0;
 }
 
